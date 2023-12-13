@@ -12,7 +12,7 @@ export default function Home() {
     return (
         
         <main>
-            <div className="header-banner min-h-[300px]">
+            <div className="header-banner min-h-[600px]">
             </div>
             <nav className="bg-header">
                 <div className="container flex items-center justify-center p-8 mx-auto capitalize text-sand font-bold">
@@ -51,7 +51,10 @@ export default function Home() {
                     <div>
                         <p className="text-sand">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus nec feugiat in fermentum posuere. A iaculis at erat pellentesque adipiscing commodo. Varius quam quisque id diam. Sem nulla pharetra diam sit amet. Libero nunc consequat interdum varius. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. Quam pellentesque nec nam aliquam sem et. Mi proin sed libero enim sed faucibus. Curabitur gravida arcu ac tortor dignissim convallis. Quam id leo in vitae turpis.</p>
                         <p/>
-                        <p></p>
+                        <div className="mx-auto flex justify-center">
+                            <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header"><a href="#">More Info</a></button>  
+                        </div>
+                        
                     </div>
                 </div>
                 <div className="p-6">

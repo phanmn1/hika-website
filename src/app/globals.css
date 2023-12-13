@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .header-banner {
-  background-image: url(../../public/IMG_9624.jpg);
+  background-image: url(../../public/IMG_0209.jpeg);
   background-position: 10% 60%;
   background-size: cover;
 }
@@ -12,7 +12,7 @@
   background-color: #EAD5B6;
 }
 
-a:hover {
+a:hover, button:hover {
   cursor: url('../../public/paw-print_resized.svg'), auto ;
 }
 
