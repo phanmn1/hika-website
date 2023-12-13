@@ -15,6 +15,8 @@ const config: Config = {
     'header': '#417e9f',
     'sand': '#EAD5B6', 
     'background': "#0f4763",
+    'red': "rgb(248 113 113)",
+    'footer': "#417e9f"
     },
   },
   plugins: [],

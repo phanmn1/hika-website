@@ -1,4 +1,11 @@
 import Image from "next/image"
+import InstagramIcon from "../../public/svg/instagram-svgrepo-com.svg"
+import FacebookIcon from "../../public/svg/facebook-svgrepo-com.svg"
+
+const imageStyle = {
+    marginLeft: 'auto',
+    marginRight: 'auto'
+}
 
 
 export default function Home() {
@@ -30,14 +37,15 @@ export default function Home() {
             </div>
             <hr/>
             <br/>
-            <div className="flex flex-wrap justify-between gap-x-4">
-                <div className="max-w-[30%]">
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-x-5 gap-y-12">
+                <div className="p-6">
                     <figure>
                         <Image 
                             src="/05CEFE52-DEFE-4F67-8B70-7927DE8BBDE7-PhotoRoom.png-PhotoRoom.png"
                             alt="good do image"
                             width={216}
                             height={217}
+                            style={imageStyle}
                         />
                     </figure>
                     <div>
@@ -46,13 +54,14 @@ export default function Home() {
                         <p></p>
                     </div>
                 </div>
-                <div className="max-w-[30%]">
+                <div className="p-6">
                     <figure>
                         <Image 
                             src="/05CEFE52-DEFE-4F67-8B70-7927DE8BBDE7-PhotoRoom.png-PhotoRoom.png"
                             alt="good do image"
                             width={216}
                             height={217}
+                            style={imageStyle}
                         />
                     </figure>
                     <div>
@@ -61,13 +70,30 @@ export default function Home() {
                         <p></p>
                     </div>
                 </div>
-                <div className="max-w-[30%]">
+                <div className="p-6">
                     <figure>
                         <Image 
                             src="/05CEFE52-DEFE-4F67-8B70-7927DE8BBDE7-PhotoRoom.png-PhotoRoom.png"
                             alt="good do image"
                             width={216}
                             height={217}
+                            style={imageStyle}
+                        />
+                    </figure>
+                    <div>
+                        <p className="text-sand">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus nec feugiat in fermentum posuere. A iaculis at erat pellentesque adipiscing commodo. Varius quam quisque id diam. Sem nulla pharetra diam sit amet. Libero nunc consequat interdum varius. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. Quam pellentesque nec nam aliquam sem et. Mi proin sed libero enim sed faucibus. Curabitur gravida arcu ac tortor dignissim convallis. Quam id leo in vitae turpis.</p>
+                        <p/>
+                        <p></p>
+                    </div>
+                </div>
+                <div className="p-6">
+                    <figure>
+                        <Image 
+                            src="/05CEFE52-DEFE-4F67-8B70-7927DE8BBDE7-PhotoRoom.png-PhotoRoom.png"
+                            alt="good do image"
+                            width={216}
+                            height={217}
+                            style={imageStyle}
                         />
                     </figure>
                     <div>
@@ -77,9 +103,32 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <hr/>
+           
             </div>
+            
             </div>
-            <footer></footer>
+            <footer className="bg-footer px-10 py-7">
+                 <div className="container mx-auto pl-6">
+                    <div className="pr-6 flex gap-x-5">
+                        <Image 
+                            src={InstagramIcon}
+                            width={32}
+                            height={32}
+                            alt="Follow us on Instagram"/>
+                        
+                        <Image 
+                            src={FacebookIcon}
+                            width={32}
+                            height={32}
+                            alt="Follow us on Facebook"/>
+                        
+                        Copyright &copy; 2023 Alohana Cavaliers
+                    </div>
+                 </div>
+            </footer>
+            
+            
         </main>
     )
 }
