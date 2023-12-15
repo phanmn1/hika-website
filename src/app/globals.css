@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .header-banner {
-  background-image: url(../../public/IMG_0209.jpeg);
+  background-image: url(../../public/dog_banner.jpg);
   background-position: 10% 60%;
   background-size: cover;
 }
