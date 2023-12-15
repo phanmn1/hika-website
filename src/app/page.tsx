@@ -51,9 +51,12 @@ export default function Home() {
             </div>
             <hr/>
             <br/>
+            <div className="text-center mb-10">
+                <div className="text-sand text-3xl text-bold">Breeding Program & Certifications</div>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-x-5 gap-y-12">
                 <div className="p-6">
-                    <figure>
+                    <figure className="min-h-[230px]">
                         <Image 
                             src={ENS_ESI}
                             alt="ENS ESI Image"
@@ -69,7 +72,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="p-6">
-                    <figure>
+                    <figure className="min-h-[230px]">
                         <Image 
                             src={OFA}
                             alt="OFA"
@@ -85,7 +88,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="p-6">
-                    <figure>
+                    <figure className="min-h-[230px]">
                         <Image 
                             src={BreedersBootcamp}
                             alt="good do image"
@@ -101,7 +104,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="p-6">
-                    <figure className="min-h-[190px]">
+                    <figure className="min-h-[230px]">
                         <Image 
                             src={PuppyCulture}
                             alt="Puppy Culture"
@@ -121,7 +124,7 @@ export default function Home() {
                 </div>
                 
                 <div className="p-6">
-                    <figure className="min-h-[190px]">
+                    <figure className="min-h-[230px]">
                         <Image 
                             src={CKCS}
                             alt="CKCS"
@@ -138,7 +141,7 @@ export default function Home() {
                 </div>
                 
                 <div className="p-6">
-                    <figure className="min-h-[190px]">
+                    <figure className="min-h-[230px]">
                         <Image 
                             src={CKCS_Heart}
                             alt="CKCS Heart Image"
@@ -162,7 +165,7 @@ export default function Home() {
             </div>
             <footer className="bg-footer px-10 py-7">
                  <div className="container mx-auto pl-6">
-                    <div className="pr-6 flex gap-x-5">
+                    <div className="pr-6 flex gap-x-5 justify-center">
                         <Image 
                             src={InstagramIcon}
                             width={32}
@@ -175,7 +178,7 @@ export default function Home() {
                             height={32}
                             alt="Follow us on Facebook"/>
                         
-                        Copyright &copy; 2023 Alohana Cavaliers
+                        <div>Copyright &copy; 2023 Alohana Cavaliers</div>
                     </div>
                  </div>
             </footer>
