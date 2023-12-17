@@ -67,8 +67,11 @@ export default function Home() {
                     </figure>
                     <div>
                         <p className="text-sand">Early Neurological Stimulation (ENS) and Early Scent Introduction (ESI) are daily exercises to which puppies are exposed to from days 3-16 to get them a headstart in development, resilience, and coping mechanisms. Benefits include: boosted brain development, improved cardiovascular performance, and stronger immune system (greater resistance to disease) to list a few.</p>
-                        <p/>
-                        <p></p>
+                    </div>
+                    <div className="mx-auto flex justify-center mt-5">
+                        <a href="https://www.akc.org/expert-advice/dog-breeding/breeder-puppy-socialization-early-neurological-stimulation/" target="_blank">
+                            <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">More Info</button>  
+                        </a>
                     </div>
                 </div>
                 <div className="p-6">
@@ -83,8 +86,11 @@ export default function Home() {
                     </figure>
                     <div>
                         <p className="text-sand">OFA health testing on breeding adults is of paramount importance to make sure only the best quality in health are passed on in generations to come.</p>
-                        <p/>
-                        <p></p>
+                    </div>
+                    <div className="mx-auto flex justify-center mt-5">
+                        <a href="https://ofa.org/" target="_blank">
+                            <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">More Info</button>  
+                        </a>
                     </div>
                 </div>
                 <div className="p-6">
@@ -99,8 +105,11 @@ export default function Home() {
                     </figure>
                     <div>
                         <p className="text-sand">Breeders Bootcamp was created with the intention of educating, empowering, and supporting breeders of all experience levels as we recognize the <b>CRITICAL</b> role we play in a puppy's life.</p>
-                        <p/>
-                        <p></p>
+                    </div>
+                    <div className="mx-auto flex justify-center mt-5">
+                        <a href="https://www.breedersbootcamp.com/" target="_blank">
+                            <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">More Info</button>
+                        </a>
                     </div>
                 </div>
                 <div className="p-6">
@@ -115,11 +124,11 @@ export default function Home() {
                     </figure>
                     <div>
                         <p className="text-sand">Puppy Culture is a socialization & training program specifically developed for puppies, from birth through the end of their critical socialization period which is 12 weeks old.</p>
-                        <p/>
-                        <div className="mx-auto flex justify-center">
-                            <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header"><a href="#">More Info</a></button>  
+                        <div className="mx-auto flex justify-center mt-5">
+                            <a href="https://shoppuppyculture.com/pages/about-puppy-culture" target="_blank">
+                                <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">More Info</button>
+                            </a>
                         </div>
-                        
                     </div>
                 </div>
                 
@@ -135,8 +144,11 @@ export default function Home() {
                     </figure>
                     <div>
                         <p className="text-sand">Our Cavaliers are registered in AKC and CKCSC-USA which are the two only legitimate registries in the U.S. for cavaliers.  The CKCSC-USA has a code of ethics which each member must follow.</p>
-                        <p/>
-                        <p></p>
+                        <div className="mx-auto flex justify-center mt-5">
+                            <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">
+                                <a href="https://ckcsc.org/code-ethics" target="_blank">More Info</a>
+                            </button>  
+                        </div>
                     </div>
                 </div>
                 
@@ -151,10 +163,21 @@ export default function Home() {
                             style={imageStyle}
                         />
                     </figure>
-                    <div>
-                        <p className="text-sand"></p>
-                        <p/>
-                        <p></p>
+                    <div className="text-sand">
+                        <p>A century long-commitment to advance the health & welfare of all dogs & uphold the following principles:</p>
+                        <br/>
+                        <ul className="list-disc">
+                            <li>HEALTH: Breeding stock is health tested to their breed’s AKC Breed Parent Club.</li>
+                            <li>EDUCATION: Stay educated on best breeding practices & advances in canine health.</li>
+                            <li>ACCOUNTABILITY: Agreeing to comply with the AKC Care & Conditions Policy.</li>
+                            <li>RESPONSIBILITY: Responsibility for the health & well-being of all puppies produced & complying with all laws regarding the ownership & maintenance of dogs.</li>
+                            <li>TRADITION: Upholding AKC’s tradition of breeding happy & healthy purebred dogs.</li>
+                        </ul>
+                        <div className="mx-auto flex justify-center mt-5">
+                            <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">
+                                <a href="https://ckcsc.org/code-ethics" target="_blank">More Info</a>
+                            </button>  
+                        </div>
                     </div>
                 </div>
             </div>
