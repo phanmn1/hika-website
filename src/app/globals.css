@@ -16,4 +16,8 @@ a:hover, button:hover {
   cursor: url('../../public/paw-print_resized.svg'), auto ;
 }
 
+.background-height {
+  height: calc(100vh - 528px);
+}
+
 

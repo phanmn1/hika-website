@@ -17,10 +17,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="min-h-screen">
       <body className={inter.className}>
         <Header/>
-          {children}
+        <div className="bg-background background-height">
+          <div className="container mx-auto"> 
+            {children}
+          </div>
+        </div>
         <Footer/>
       </body>
     </html>

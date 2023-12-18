@@ -3,8 +3,6 @@ import CertificationList from "./components/CertificationList"
 export default function Home() {
     return (
         <main>
-            <div className="bg-background">
-            <div className="container mx-auto">
             <div className="py-4 px-3 text-center text-sand">
                 <p className="mb-5 text-3xl font-bold">Welcome to Alohana cavaliers located in Honolulu, Hawaii on the Island of Oahu!</p>
                 <p className="mb-5 mt-12">This particular breed, the Cavalier King Charles Spaniel had stolen my heart & I naturally became passionate in learning every possible thing I could about this amazing breed; which is a bountiful journey. After I got my first Cavalier, I knew I found my soulmate dog breed & wanted to work with them through out the rest of my life, & share to others the deep love that this breed is capable of.</p>
@@ -22,11 +20,6 @@ export default function Home() {
                <CertificationList/> 
             </div>
             <hr/>
-           
-            </div>
-            
-            </div>
-
         </main>
     )
 }
