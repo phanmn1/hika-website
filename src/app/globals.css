@@ -17,7 +17,7 @@ a:hover, button:hover {
 }
 
 .background-height {
-  height: calc(100vh - 528px);
+  min-height: calc(100vh - 528px);
 }
 
 

@@ -44,7 +44,7 @@ export default () => {
           <nav className="bg-header">
               <div className="container flex items-center justify-center p-8 mx-auto capitalize text-sand font-bold">
                   {navlinks.map(({link, name}) => {
-                    return <Link href={link} className={`${pathname === link ? 'border-b-2': ''} hover:border-b-2 mx-9`}>{name}</Link>
+                    return <Link href={link} key={link} className={`${pathname === link ? 'border-b-2': ''} hover:border-b-2 mx-9`}>{name}</Link>
                   })}
               </div>
           </nav>

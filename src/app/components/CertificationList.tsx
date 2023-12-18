@@ -78,8 +78,8 @@ const certifications: CertItem[] = [
 
 export default () => {
   return (
-    certifications.map((cert: CertItem) => {
-      return <CertificationItem {...cert}/>
+    certifications.map((cert: CertItem, index) => {
+      return <CertificationItem key={index} {...cert}/>
     })
   )
 }
