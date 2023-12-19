@@ -1,7 +1,5 @@
 import CertificationList from "./components/CertificationList"
 import Image from "next/image"
-import test from "../../public/photos/D40F9B60-AC88-4877-A1CA-412965A113B0.jpg"
-import { CSSProperties } from 'react'
 
 
 export default function Home() {
@@ -15,7 +13,7 @@ export default function Home() {
                     height={200}
                     width={400}
                     alt="test image"
-                    className="float-right rounded-md ml-5 mt-5"
+                    className="md:float-right rounded-md md:ml-5 md:mt-5 sm:mx-auto"
                 />
                 
                 <p className="mb-5 mt-12">
@@ -30,7 +28,7 @@ export default function Home() {
                     height={200}
                     width={300}
                     alt="test image 2"
-                    className="float-left rounded-md mr-5 mt-5"
+                    className="md:float-left rounded-md md:mr-5 md:mt-5 sm:mx-auto sm:my-5"
                 />
                 As responsible Cavalier fanciers and hobby breeders, we adhere to ethical breeding practices and follow all applicable regulations and guidelines. We are committed to promoting the health and longevity of the Cavalier breed. Our goal is to contribute to the betterment of the breed and produce healthy puppies that will thrive in their new homes. 
                 <br/><br/>
