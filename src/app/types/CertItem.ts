@@ -5,7 +5,7 @@ export type CertItem = {
   imageSrc: StaticImageData;
   altText?: string,
   imageStyle: CSSProperties; 
-  text: string;
-  link: string;
+  text?: string;
+  link?: string;
 }
 

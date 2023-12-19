@@ -7,6 +7,8 @@ import OFA from "../../../public/ofa.png"
 import BreedersBootcamp from "../../../public/breeders_bootcamp.png"
 import CKCS from "../../../public/ckcs.png"
 import CKCS_Heart from "../../../public/ckcs_heart.jpg"
+import GOOD_DOG from '../../../public/alohana-cavaliers-hawaii-badge.png'
+import RED_CROSS from '../../../public/red_cross.jpg'
 
 
 const imageStyle: CSSProperties = {
@@ -49,7 +51,7 @@ const certifications: CertItem[] = [
     imageSrc: PuppyCulture,
     imageStyle: imageStyle, 
     text: "Puppy Culture is a socialization & training program specifically developed for puppies, from birth through the end of their critical socialization period which is 12 weeks old.",
-    link: "https://shoppuppyculture.com/pages/about-puppy-culture"
+    link: "https://www.shoppuppyculture.com/#a_aid=6568fcc05652b&amp;a_bid=d38a8f14"
   },
   // CKCS 
   {
@@ -58,12 +60,12 @@ const certifications: CertItem[] = [
     text: "Our Cavaliers are registered in AKC and CKCSC-USA which are the two only legitimate registries in the U.S. for cavaliers. The CKCSC-USA has a code of ethics which each member must follow.",
     link: "https://ckcsc.org/code-ethics"
   }, 
-  // CKCS Heart
+  //CKCS Heart
   {
     imageSrc: CKCS_Heart,
     imageStyle: imageStyle,
-    text: `<p>A century long-commitment to advance the health & welfare of all dogs & uphold the following principles:</p>
-    <br/>
+    text: `A century long-commitment to advance the health & welfare of all dogs & uphold the following principles:
+    <br><br>
     <ul className="list-disc">
         <li>HEALTH: Breeding stock is health tested to their breed’s AKC Breed Parent Club.</li>
         <li>EDUCATION: Stay educated on best breeding practices & advances in canine health.</li>
@@ -72,6 +74,17 @@ const certifications: CertItem[] = [
         <li>TRADITION: Upholding AKC’s tradition of breeding happy & healthy purebred dogs.</li>
     </ul>`,
     link: "https://ckcsc.org/code-ethics"
+  }, 
+  // Good Dog
+  {
+    imageSrc: GOOD_DOG,
+    imageStyle: imageStyle,
+    link: 'https://www.gooddog.com/breeders/alohana-cavaliers-hawaii'
+  },
+  // Red Cross
+  {
+    imageSrc: RED_CROSS,
+    imageStyle: imageStyle
   }
 
 ]
