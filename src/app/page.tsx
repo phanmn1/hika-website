@@ -6,7 +6,8 @@ export default function Home() {
     return (
         <main>
             <div className="py-4 px-3 text-sand">
-                <h1 className="mb-5 text-3xl text-center font-bold">Welcome to Alohana Cavaliers located in Honolulu, Hawaii on the Island of Oahu!!</h1>
+                <h1 className="mb-3 text-3xl text-center font-bold">Welcome to Alohana Cavaliers</h1>
+                <p className="text-center mb-5">located in Honolulu, Hawaii on the Island of Oahu!!</p>
                 
                 <Image
                     src="/photos/IMG_0990.jpg"

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default () => {
   return (
-      <div className="text-sand py-9">
+      <div className="text-sand py-9 mx-5">
         <div>
         <p className="text-3xl text-center text-bold">Breeder Information</p>
         <p className="text-center">“I don’t like dogs. I LOVE dogs.” </p>
@@ -31,8 +31,8 @@ export default () => {
         <br/><br/>
         <hr/>
         <div className="mt-9 text-left">
-          <p className="text-3xl text-bold">About Breeding Program</p>
-          <p>Health details in our Cavaliers are of utmost importance. 
+          <p className="text-3xl text-bold text-center">About Breeding Program</p>
+          <p className="text-center">Health details in our Cavaliers are of utmost importance. 
 This includes having all of our dogs professionally tested for their:</p>
 <br/>
 <br/>

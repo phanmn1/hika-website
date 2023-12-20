@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Oleo_Script_Swash_Caps } from 'next/font/google'
+import { PT_Serif } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-const oleo = Oleo_Script_Swash_Caps({ 
+const pt_serif = PT_Serif({ 
   subsets: ['latin'], 
   weight: ["400", "700"]
 })
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={oleo.className}>
+      <body className={pt_serif.className}>
         <Header/>
         <div className="bg-background background-height">
           <div className="container mx-auto"> 
