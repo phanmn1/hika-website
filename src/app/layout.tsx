@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Oleo_Script_Swash_Caps } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const oleo = Oleo_Script_Swash_Caps({ 
+  subsets: ['latin'], 
+  weight: ["400", "700"]
+})
 
 export const metadata: Metadata = {
   title: 'Alohana Cavaliers',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={inter.className}>
+      <body className={oleo.className}>
         <Header/>
         <div className="bg-background background-height">
           <div className="container mx-auto"> 

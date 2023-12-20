@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: "PT Serif", system-ui, sans-serif;
-  }
-}
-
 .header-banner {
   background-image: url(../../public/dog_banner.jpg);
   background-position: 10% 60%;

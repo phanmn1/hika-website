@@ -1,16 +1,39 @@
+import Image from "next/image"
+
 export default () => {
   return (
-      <div className="text-sand text-center py-9">
+      <div className="text-sand py-9">
         <div>
-        <p className="text-3xl text-bold">Breeder Information</p>
-        <p>“I don’t like dogs. I LOVE dogs.” </p>
+        <p className="text-3xl text-center text-bold">Breeder Information</p>
+        <p className="text-center">“I don’t like dogs. I LOVE dogs.” </p>
         <br/>
-        <p>Hi, my name is Hikari Watanabe! Born in Japan, raised in Oahu, went to college in California, and planned to settle down in Oregon until a tragic but a now common happening called cancer fell upon my mother who was still in Hawaii while I was off on my own ventures.  I ultimately made the decision to fully move back to Hawaii to support and help her as much as I can after learning more about this cancer knowing that it will be a long battle. This move back to Hawaii also ultimately changed much of my life path which led me into following my passion that would allow me to work in something I absolutely love while also being there for my mother. When it comes to following my passion, this means my love for dogs ever since I can remember. Some may even say dog-obsessed, since I would surround myself with anything dog-related such as dog textbooks about breed standards, drawing and painting dogs whenever I could, collecting dog blankets, curtains, accessories, researching about dogs, going to any dog-related events I could go to, and talking about dogs wherever I could from when I was very little. I’ve owned a variety of different animals through out my life and am a total animal nerd. With that being said, the main focus to my breeding program is that I am and will always strive to do my best to be a breeder who can provide this amazing breed to others here in the way how I wish for all breeders to put all the effort and due diligence possible to show true care for the future of my dogs, their puppies, as well as their prospective owners. It is extremely hard to find anybody who checks all the marks but I will strive my best to check all those marks that I wished to find in a breeder when I was searching for a Cavalier. </p>
+        <Image 
+          src='/photos/IMG_7492.jpg'
+          height={200}
+          width={300}
+          alt="Halloween Pic"
+          className="md:float-left rounded-md md:mr-5 md:mt-5 sm:mx-auto sm:my-5"
+        />
+        <p className="my-3">Aloha! I am Hikari Watanabe, and I am thrilled to share my story as a passionate dog lover. Born in Japan, raised in Oahu, educated in California, and lived a few years in Oregon, my life took an unexpected turn when my mother faced a cancer diagnosis back in Hawaii. Determined to support her during this challenging time, I made the heartfelt decision to return to my home state.</p>
+        <p className="my-3">Returning to Hawaii not only allowed me to be there for my mother but also redirected my path towards following my true passion: dogs.  Since I can remember, my love for dogs has been an integral part of my life. From poring over dog textbooks to creating an art business inspired by dogs, collecting dog-related items, attending dog events, and engaging in conversations about dogs, I have immersed myself in the world of man's best friend.</p>
+        <Image
+            src="/photos/IMG_8508.jpg"
+            height={200}
+            width={300}
+            alt="Lady and Amaro"
+            className="md:float-right rounded-md md:ml-5 md:mt-5 sm:mx-auto"
+          />
+        <p className="my-3">As an avid animal enthusiast, I have cared for various creatures throughout my life; from kabutomushi, fish, hermit crabs, a lovebird, cats, dogs, and the list goes on. I have also fostered neonate kittens and cats at a rescue shelter in California for many years. However, it is my profound dedication to dogs that has shaped my journey as a Cavalier fancier and hobby breeder. I am committed to providing this extraordinary breed to others in a manner that reflects the utmost care and responsibility. I understand the difficulty in finding a breeder who checks all the boxes, as I experienced the same challenge when searching for a Cavalier.</p>
+        <p className="my-3">That is why I am determined to be the breeder I wished to find during my own quest. My breeding program prioritizes thorough effort and diligent attention to detail, ensuring the well-being of my dogs, their puppies, and their future owners. While finding someone who meets all the criteria may be rare, I strive to surpass those expectations. Your trust and satisfaction in our breeding practices are of the utmost importance to me. My family and life partner makes it all possible to reach these goals and am also in full appreciation of them. </p>
+        <p className="my-3">Thank you for considering our breeding program. We eagerly anticipate the opportunity to provide you with an exceptional dog and a rewarding experience that exceeds your expectations.</p>
         </div>
+
+        <br/><br/>
+        <hr/>
         <div className="mt-9 text-left">
           <p className="text-3xl text-bold">About Breeding Program</p>
           <p>Health details in our Cavaliers are of utmost importance. 
-This includes having all of our dogs professionally tested for their:
+This includes having all of our dogs professionally tested for their:</p>
 <br/>
 <br/>
 <ul className="list-disc">
@@ -33,7 +56,6 @@ which are all extremely harmful for them. Please go to my resources page to educ
 <br/><br/>
 Our Cavaliers are registered in AKC and CKCSC-USA which are the two only legitimate registries in the U.S. for cavaliers.  The CKCSC-USA has a code of ethics which each member must follow. The puppies we produce are well-bred and raised as family to be well-socialized, friendly, playful, and just overall amazing companions. I breed for quality in health, correct temperament, & comformation to the standard of the breed. Once you own a cavalier, you will understand and feel the difference of the immense love a cavalier can give you. I’ve owned a few different breeds from a chihuahua to a mini american sheperd but until I owned my first cavalier, it felt like I found true love in a dog that I’ve never experienced. Something about how their adorable “melty” eyes reflect your gaze and can soothe your soul is definitely a super-power I believe they have. 
 
-</p>
 
         </div>
       </div>

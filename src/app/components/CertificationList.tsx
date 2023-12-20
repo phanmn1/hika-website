@@ -79,14 +79,15 @@ const certifications: CertItem[] = [
   {
     imageSrc: GOOD_DOG,
     imageStyle: imageStyle,
+    text: 'Responsible breeding requires a lot of planning, skill and experience. It’s not nearly as simple as pairing two physically healthy dogs together and hoping for the best. It’s critical that these decisions take into consideration the heritable health conditions that affect their breed, each individual dog’s health testing, and considering the parents’ temperaments, overall health, pedigrees, and conformation in order to make the best matches.',
     link: 'https://www.gooddog.com/breeders/alohana-cavaliers-hawaii'
   },
   // Red Cross
   {
     imageSrc: RED_CROSS,
-    imageStyle: imageStyle
+    imageStyle: imageStyle,
+    text: "Certified to understand and how to check pet's vital signs, preventative care for cats and dogs, to caring for the most critical emergency situations - including breathing and cardiac emergencies, wounds, bleeding, and seizures."
   }
-
 ]
 
 export default () => {
