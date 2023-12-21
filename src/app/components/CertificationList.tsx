@@ -1,7 +1,7 @@
 import { CertItem } from "../types/CertItem"
 import CertificationItem from "./CertificationItem"
 import { CSSProperties } from 'react'
-import PuppyCulture from "../../../public/puppy_culture.jpg"
+import PuppyCulture from "../../../public/puppy_culture.png"
 import ENS_ESI from "../../../public/ens_esi.png"
 import OFA from "../../../public/ofa.png"
 import BreedersBootcamp from "../../../public/breeders_bootcamp.png"

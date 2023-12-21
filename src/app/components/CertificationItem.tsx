@@ -5,7 +5,7 @@ import parser from 'html-react-parser'
 export default (props: CertItem) => {
     return (
         <div className="p-6">
-            <figure className="min-h-[230px]">
+            <figure className="min-h-[150px]">
                 <Image 
                     src={props.imageSrc}
                     alt="ENS ESI Image"

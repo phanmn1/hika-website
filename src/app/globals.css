@@ -8,6 +8,10 @@
   background-size: cover;
 }
 
+.title-shadow {
+  text-shadow: 4px 4px 8px black;
+}
+
 .body {
   background-color: #EAD5B6;
 }
