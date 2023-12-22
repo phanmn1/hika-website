@@ -1,37 +1,40 @@
-import { Fragment } from "react"
-import Image from "next/image"
-import { CSSProperties } from "react"
-import { Oleo_Script_Swash_Caps } from 'next/font/google'
+import DogDetail from "../components/DogDetail"
+import { DogInfo } from "../types/DogInfo"
 
-const oleo = Oleo_Script_Swash_Caps({
-    weight: ['400', '700'],
-    subsets: ['latin']
-})
+const boys: DogInfo[] = [
+    {
+        name: 'Magnificent Amaro Magnolia Passco',
+        callName: 'Amaro',
+        coat: 'Tricolor', 
+        personality: 'Lower energy cuddle bug who would rather get attention than play with toys',
+        hobby: 'Cuddling on the sofa, watching disney movies, & kissing anyone who wants it',
+        fact: 'He is half-brother to Ellie as they are both from Slovakia!',
+        src: '/photos/AMARO2.jpg'
+    },
+    {
+        name: 'Luffy Dobry Rok',
+        callName: 'Luffy',
+        coat: 'Blenheim',
+        personality: 'The most balanced out of the lot and is right in the middle of energetic & chill!',
+        hobby: 'Getting attention & playing with everyone in the house.',
+        fact: 'He is a Poland boy and has a blenheim mark on his head.  He is the most excited wigglebutt out of the crew. His best friend here is Amaro.',
+        src: '/photos/IMG_7764.jpg'
+    },
+    {
+        name: 'Midori’s Flowers Mark',
+        callName: 'Mark', 
+        coat: 'Tricolor',
+        personality: 'Toy-lover with the most energy and the most fearless out of the crew',
+        hobby: 'Toys, toys, playing catch, and getting cuddles',
+        fact: 'Came all the way from Italy!',
+        src: '/photos/IMG_4314.jpg'
+    }
+]
 
 export default () => {
     return (
-        <div className="text-sand py-9 mx-auto max-w-3xl">
-            {/* <h1 className="text-3xl text-center text-bold">Our Boys</h1> */}
-            <div className="py-5 flex flex-row gap-x-5">
-                <div>
-                    <Image
-                        src="/photos/IMG_0266.jpg" 
-                        className="rounded-md"
-                        height={450}
-                        width={350}
-                        alt="Amaro"
-                    />
-                </div>
-                <div className="">
-                    <div className={`my-5 text-3xl title-shadow ${oleo.className}`}>Magnificent Amaro Magnolia Passco</div>
-                    <div className="my-3">Call name: Amaro</div>
-                    <div className="my-3">Coat color: Tricolor</div>
-                    <div className="my-3">Personality: Lower energy cuddle bug who would rather get attention than play with toys</div>
-                    <div className="my-3">Favorite hobby: Cuddling on the sofa, watching disney movies, & kissing anyone who wants it</div>
-                    <div className="my-3">Fun fact: He is half-brother to Ellie as they are both from Slovakia!</div>
-                </div>
-
-            </div>    
+        <div className="text-sand py-9 mx-auto max-w-3xl"> 
+               {boys.map((item) => <DogDetail {...item}/>)} 
         </div>
 
     )

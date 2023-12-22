@@ -8,15 +8,13 @@ export default function Home() {
             <div className="py-4 px-3 text-sand">
                 <h1 className="mb-3 text-3xl text-center font-bold">Welcome to Alohana Cavaliers</h1>
                 <p className="text-center mb-5">located in Honolulu, Hawaii on the Island of Oahu!!</p>
-                
                 <Image
                     src="/photos/IMG_0990.jpg"
                     height={200}
-                    width={400}
+                    width={300}
                     alt="test image"
                     className="md:float-right rounded-md md:ml-5 md:mt-5 sm:mx-auto"
                 />
-                
                 <p className="mb-5 mt-12">
                 At Alohana Cavaliers, we take great pride in our passion for showing and raising exceptional Cavalier King Charles Spaniels. As dedicated professionals in the dog fancier community, we strive to provide you with healthy, well-socialized, and beautiful Cavalier puppies that will bring joy and companionship to your life.
                 <br/><br/>
