@@ -13,35 +13,43 @@ export default function Home() {
                     height={200}
                     width={300}
                     alt="test image"
-                    className="md:float-right rounded-md md:ml-5 md:mt-5 sm:mx-auto"
+                    className="md:float-left rounded-md md:mr-5 md:mt-5 sm:mx-auto"
                 />
-                <p className="mb-5 mt-12">
-                At Alohana Cavaliers, we take great pride in our passion for showing and raising exceptional Cavalier King Charles Spaniels. As dedicated professionals in the dog fancier community, we strive to provide you with healthy, well-socialized, and beautiful Cavalier puppies that will bring joy and companionship to your life.
-                <br/><br/>
-                Our program is built on a foundation of excellence, focusing on the highest standards of care, health, and attention to detail. We carefully select our breeding dogs, ensuring they possess the desirable traits that define the Cavalier breed, including their gentle nature and affectionate disposition. Through extensive research and proper health testing, we aim to produce puppies of exceptional quality, both in terms of physical attributes and temperament.
-                <br/><br/>
-                The well-being of our dogs is of utmost importance to us. Our Cavaliers are raised in a loving and nurturing environment, receiving the highest quality care, nutrition, and veterinary attention. We prioritize early socialization, exposing our puppies to various stimuli and experiences to help them grow into confident and well-adjusted companions.
-                <br/><br/>
-                <Image 
+                <p className="mb-5 mt-12">Our program is built on a foundation of excellence, focusing on the highest standards of care, health, and attention to detail. As responsible Cavalier fanciers and hobby breeders, we adhere to ethical breeding practices and follow all applicable regulations and guidelines to promote the health and longevity of the Cavalier breed. We carefully select our breeding dogs, ensuring they possess the desirable traits that define the Cavalier breed, including their gentle nature and affectionate disposition.  We also prioritize early socialization, exposing our puppies to various stimuli and experiences to help them grow into confident and well-adjusted companions who will bring years of happiness & cherished memories.
+
+                {/* <Image 
                     src="/photos/IMG_0992.jpg"
                     height={200}
                     width={300}
                     alt="test image 2"
                     className="md:float-left rounded-md md:mr-5 md:mt-5 sm:mx-auto sm:my-5"
-                />
-                As responsible Cavalier fanciers and hobby breeders, we adhere to ethical breeding practices and follow all applicable regulations and guidelines. We are committed to promoting the health and longevity of the Cavalier breed. Our goal is to contribute to the betterment of the breed and produce healthy puppies that will thrive in their new homes. 
+                /> */}
                 <br/><br/>
-
-                We understand that bringing a new puppy into your life is a significant decision. That's why we provide ongoing support and guidance to our puppy owners. We are here to answer any questions you may have and offer advice on training, nutrition, and general care. Our commitment to you and your puppy extends beyond the adoption process – we are dedicated to fostering a lifelong bond between you and your Cavalier.
-                <br/><br/>
-                
-                We invite you to explore our website and learn more about our breeding program, our occasionally available puppies, and our commitment to excellence. If you're interested in adding a loving and loyal Cavalier companion to your family, please don't hesitate to reach out to us. We would be delighted to assist you in finding the perfect puppy that will bring years of happiness and cherished memories.
-                <br/><br/>
-                Thank you for visiting our Website. 
-                <br/><br/>
-                We look forward to helping you find your perfect furry companion!
-                        
+                We understand that bringing a new puppy into your life is a significant decision. That's why we provide ongoing support and guidance to our puppy owners. We are here to answer any questions you may have and offer advice on training, nutrition, and general care. Our commitment to you and your puppy extends beyond the adoption process – we are dedicated to fostering a lifelong bond between you and your Cavalier. 
                 </p>
+            </div> 
+            <div className="flex flex-wrap my-5 gap-4 justify-center ">
+                <Image 
+                    src="/photos/D40F9B60-AC88-4877-A1CA-412965A113B0.jpg"
+                    alt="test 2"
+                    height={300}
+                    width={300}
+                    className="rounded-md"
+                />
+                <Image
+                    src="/photos/IMG_0858.jpg"
+                    alt="group photo"
+                    height={300}
+                    width={400}
+                    className="rounded-md"
+                />
+                <Image
+                    src="/photos/IMG_0991.jpg"
+                    alt="group photo"
+                    height={300}
+                    width={400}
+                    className="rounded-md"
+                />
             </div>
             <hr/>
             <br/>

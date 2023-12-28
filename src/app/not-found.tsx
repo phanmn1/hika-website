@@ -1,11 +1,17 @@
 import Image from "next/image"
-import Link from "next/link"
+
 export default () => {
-  return (
-    <div>
-      <h2>Not Found</h2>
-      <p>Could not find page</p>
-      <Link href="/">Return Home</Link>
-    </div>
-  )
+    return (
+        <div className="flex place-content-center">
+            <div>
+                <Image
+                    src="/photos/MagicEraser_231217_164527.png"
+                    alt="Koro Sorry"
+                    height={300}
+                    width={200}
+                    />
+                <h1 className="text-3xl text-center font-bold text-sand">Coming Soon</h1>
+            </div>
+        </div>
+    )
 }
