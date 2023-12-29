@@ -1,12 +1,7 @@
 import { Fragment } from "react"
 import Image from "next/image"
-import { Oleo_Script_Swash_Caps } from 'next/font/google'
+import { oleo } from "../global/fonts"
 import { DogInfo } from "../types/DogInfo"
-
-const oleo = Oleo_Script_Swash_Caps({
-    weight: ['400', '700'],
-    subsets: ['latin']
-})
 
 export default (props: DogInfo) => {
     return (

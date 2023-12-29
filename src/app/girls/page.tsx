@@ -3,7 +3,7 @@ import { DogInfo } from "../types/DogInfo"
 
 const girls: DogInfo[] = [
     {
-        name: 'Alohana Lady Cinnamon', 
+        name: 'Lady Cinnamon', 
         callName: 'Lady', 
         coat: 'Blenheim',
         personality: 'The sweetest little angel who loves to hug people and give sweet peck-kisses',
@@ -18,7 +18,7 @@ const girls: DogInfo[] = [
         personality: 'Definition of being a couch potato but has spurts of energy just for a short bit!',
         hobby: 'Eating! Snacks! Cuddles for hours on end.',
         fact: 'Half-sister to Amaro as they are both from Slovakia!',
-        src: '/photos/IMG_9531.jpg'
+        src: '/photos/F6DD0C0E-7EA7-49E6-B3E8-6A02B2AE4A89.jpg'
     }
 ]
 export default () => {

@@ -39,12 +39,12 @@ const certifications: CertItem[] = [
     text: "OFA health testing on breeding adults is of paramount importance to make sure only the best quality in health are passed on in generations to come.",
     link: "https://ofa.org/"
   },
-  // Breeders Bootcamp
+  // Good Dog
   {
-    imageSrc: BreedersBootcamp,
+    imageSrc: GOOD_DOG,
     imageStyle: imageStyle,
-    text: "Breeders Bootcamp was created with the intention of educating, empowering, and supporting breeders of all experience levels as we recognize the <b>CRITICAL</b> role we play in a puppy's life.",
-    link: "https://www.breedersbootcamp.com/"
+    text: 'Responsible breeding requires a lot of planning, skill and experience. It’s not nearly as simple as pairing two physically healthy dogs together and hoping for the best. It’s critical that these decisions take into consideration the heritable health conditions that affect their breed, each individual dog’s health testing, and considering the parents’ temperaments, overall health, pedigrees, and conformation in order to make the best matches.',
+    link: 'https://www.gooddog.com/breeders/alohana-cavaliers-hawaii'
   },
   // Puppy Culture
   {
@@ -60,6 +60,12 @@ const certifications: CertItem[] = [
     text: "Our Cavaliers are registered in AKC and CKCSC-USA which are the two only legitimate registries in the U.S. for cavaliers. The CKCSC-USA has a code of ethics which each member must follow.",
     link: "https://ckcsc.org/code-ethics"
   }, 
+  // Red Cross
+  {
+    imageSrc: RED_CROSS,
+    imageStyle: imageStyle,
+    text: "Certified to understand and how to check pet's vital signs, preventative care for cats and dogs, to caring for the most critical emergency situations - including breathing and cardiac emergencies, wounds, bleeding, and seizures."
+  },
   //CKCS Heart
   {
     imageSrc: CKCS_Heart,
@@ -75,18 +81,12 @@ const certifications: CertItem[] = [
     </ul>`,
     link: "https://ckcsc.org/code-ethics"
   }, 
-  // Good Dog
+  // Breeders Bootcamp
   {
-    imageSrc: GOOD_DOG,
+    imageSrc: BreedersBootcamp,
     imageStyle: imageStyle,
-    text: 'Responsible breeding requires a lot of planning, skill and experience. It’s not nearly as simple as pairing two physically healthy dogs together and hoping for the best. It’s critical that these decisions take into consideration the heritable health conditions that affect their breed, each individual dog’s health testing, and considering the parents’ temperaments, overall health, pedigrees, and conformation in order to make the best matches.',
-    link: 'https://www.gooddog.com/breeders/alohana-cavaliers-hawaii'
-  },
-  // Red Cross
-  {
-    imageSrc: RED_CROSS,
-    imageStyle: imageStyle,
-    text: "Certified to understand and how to check pet's vital signs, preventative care for cats and dogs, to caring for the most critical emergency situations - including breathing and cardiac emergencies, wounds, bleeding, and seizures."
+    text: "Breeders Bootcamp was created with the intention of educating, empowering, and supporting breeders of all experience levels as we recognize the <b>CRITICAL</b> role we play in a puppy's life.",
+    link: "https://www.breedersbootcamp.com/"
   }
 ]
 

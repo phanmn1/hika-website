@@ -12,7 +12,7 @@ const boys: DogInfo[] = [
         src: '/photos/AMARO2.jpg'
     },
     {
-        name: 'Luffy Dobry Rok',
+        name: 'Monkey D. Luffy',
         callName: 'Luffy',
         coat: 'Blenheim',
         personality: 'The most balanced out of the lot and is right in the middle of energetic & chill!',
@@ -27,7 +27,7 @@ const boys: DogInfo[] = [
         personality: 'Toy-lover with the most energy and the most fearless out of the crew',
         hobby: 'Toys, toys, playing catch, and getting cuddles',
         fact: 'Came all the way from Italy!',
-        src: '/photos/IMG_4314.jpg'
+        src: '/photos/EC109919-80E1-4F47-AB90-54D01D690A35.jpg'
     }
 ]
 
