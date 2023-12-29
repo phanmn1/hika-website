@@ -11,6 +11,7 @@ export default (props: CertItem) => {
                     alt="ENS ESI Image"
                     width={216}
                     height={217}
+                    placeholder='blur'
                     style={props.imageStyle}
                 />
             </figure>
