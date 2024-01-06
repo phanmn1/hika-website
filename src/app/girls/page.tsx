@@ -9,7 +9,7 @@ const girls: DogInfo[] = [
         personality: 'The sweetest little angel who loves to hug people and give sweet peck-kisses',
         hobby: 'Chasing reflections from mirrors, sleeping on pawrents pillows.',
         fact: 'She absolutely loves when the vacuum comes out and loves to follow it around wagging her tail.',
-        src: '/photos/LADY.jpg'
+        src: '/photos/lady.jpg'
     }, 
     {
         name: 'Elizabeth Magnolia Passco', 
