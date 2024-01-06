@@ -3,7 +3,7 @@ import Image from "next/image"
 import { oleo } from "../global/fonts"
 import { DogInfo } from "../types/DogInfo"
 
-export default (props: DogInfo) => {
+export default function DogDetail(props: DogInfo) {
     return (
         <div className="py-5 flex flex-row gap-x-5">
                 <Image

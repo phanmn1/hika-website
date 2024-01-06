@@ -104,7 +104,7 @@ const resources = [
   }
 ]
 
-export default () => {
+export default function Resources() {
   return (
     <Fragment>
     <div className="py-5">

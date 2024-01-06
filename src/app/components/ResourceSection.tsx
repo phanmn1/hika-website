@@ -1,8 +1,8 @@
 import { Fragment } from "react";
-import { ResourceLinkItem, ResourceLinkSection } from "../types/Resource";
+import { ResourceLinkSection } from "../types/Resource";
 import ResourceLinks from "./ResourceLinks";
 
-export default (props: ResourceLinkSection) => {
+export default function ResourceSection (props: ResourceLinkSection) {
   return (
     <Fragment>
     { props.sections.map((resource, index) => {

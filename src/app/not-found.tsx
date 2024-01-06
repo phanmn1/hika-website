@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default () => {
+export default function NotFound() {
     return (
         <div className="flex place-content-center">
             <div>

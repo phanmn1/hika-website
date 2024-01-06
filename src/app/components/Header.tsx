@@ -35,7 +35,7 @@ const navlinks: NavItem[]= [
   }
 ]
 
-export default () => {
+export default function Header() {
   const pathname = usePathname()
   return (
       <header>

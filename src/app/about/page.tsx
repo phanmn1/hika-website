@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default () => {
+export default function AboutPage () {
   return (
       <div className="text-sand py-9 mx-5">
         <div>
@@ -15,7 +15,7 @@ export default () => {
           className="md:float-left rounded-md md:mr-5 md:mt-5 sm:mx-auto sm:my-5"
         />
         <p className="my-3">Aloha! I am Hikari Watanabe, and I am thrilled to share my story as a passionate dog lover. Born in Japan, raised in Oahu, educated in California, and lived a few years in Oregon, my life took an unexpected turn when my mother faced a cancer diagnosis back in Hawaii. Determined to support her during this challenging time, I made the heartfelt decision to return to my home state.</p>
-        <p className="my-3">Returning to Hawaii not only allowed me to be there for my mother but also redirected my path towards following my true passion: dogs.  Since I can remember, my love for dogs has been an integral part of my life. From poring over dog textbooks to creating an art business inspired by dogs, collecting dog-related items, attending dog events, and engaging in conversations about dogs, I have immersed myself in the world of man's best friend.</p>
+        <p className="my-3">Returning to Hawaii not only allowed me to be there for my mother but also redirected my path towards following my true passion: dogs.  Since I can remember, my love for dogs has been an integral part of my life. From poring over dog textbooks to creating an art business inspired by dogs, collecting dog-related items, attending dog events, and engaging in conversations about dogs, I have immersed myself in the world of man&#39;s best friend.</p>
         <Image
             src="/photos/IMG_8508.jpg"
             height={200}
@@ -61,3 +61,4 @@ Our Cavaliers are registered in AKC and CKCSC-USA which are the two only legitim
       </div>
   )
 }
+

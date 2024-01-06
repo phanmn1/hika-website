@@ -21,10 +21,10 @@ const girls: DogInfo[] = [
         src: '/photos/F6DD0C0E-7EA7-49E6-B3E8-6A02B2AE4A89.jpg'
     }
 ]
-export default () => {
+export default function GirlsPage() {
     return (
         <div className="text-sand py-9 mx-auto max-w-3xl"> 
-               {girls.map((item) => <DogDetail {...item}/>)} 
+               {girls.map((item) => <DogDetail key={item.callName} {...item}/>)} 
         </div>
 
     )

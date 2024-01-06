@@ -2,7 +2,7 @@ import { CertItem } from '../types/CertItem'
 import Image from 'next/image'
 import parser from 'html-react-parser'
 
-export default (props: CertItem) => {
+export default function CertificationItem (props: CertItem) {
     return (
         <div className="p-6">
             <figure className="min-h-[150px]">

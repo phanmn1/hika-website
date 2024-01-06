@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { ResourceLinkItem } from "../types/Resource";
 
-export default (props: ResourceLinkItem) => {
+export default function ResourceLinks (props: ResourceLinkItem) {
   return (
     <div className="py-3">
       <div className="text-sand">{props.sectionTitle}</div>

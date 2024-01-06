@@ -31,10 +31,10 @@ const boys: DogInfo[] = [
     }
 ]
 
-export default () => {
+export default function BoysPage()  {
     return (
         <div className="text-sand py-9 mx-auto max-w-3xl"> 
-               {boys.map((item) => <DogDetail {...item}/>)} 
+               {boys.map((item) => <DogDetail key={item.callName} {...item}/>)} 
         </div>
 
     )

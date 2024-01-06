@@ -2,7 +2,7 @@ import Image from "next/image"
 import InstagramIcon from "../../../public/svg/instagram-svgrepo-com.svg"
 import FacebookIcon from "../../../public/svg/facebook-svgrepo-com.svg"
 
-export default () => {
+export default function Footer() {
   return (
     <footer className="bg-footer px-10 py-7">
                  <div className="container mx-auto pl-6">
