@@ -12,6 +12,9 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {},
+      transitionProperty: {
+        'height': 'height'
+      }
     },
   colors: {
     'blue': '#9dbec9',
