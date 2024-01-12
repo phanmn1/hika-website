@@ -23,7 +23,7 @@ const girls: DogInfo[] = [
 ]
 export default function GirlsPage() {
     return (
-        <div className="text-sand py-9 mx-auto max-w-3xl"> 
+        <div className="text-sand py-9 md:mx-auto max-w-3xl mx-5">
                {girls.map((item) => <DogDetail key={item.callName} {...item}/>)} 
         </div>
 

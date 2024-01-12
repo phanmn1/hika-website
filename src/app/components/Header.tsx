@@ -44,9 +44,6 @@ export default function Header() {
   const pathname = usePathname()
   const [open, setOpen] = useState<boolean>(false)
 
-  const jsxNavlinks = navlinks.map(({link, name}) => {
-      return <Link href={link} key={link} className={`${pathname === link ? 'border-b-2': ''} hover:border-b-2 mx-9`}>{name}</Link>
-    })
 
   return (
       <header>
@@ -57,10 +54,12 @@ export default function Header() {
                 {!open && <Image src={burger} height={32} width={32} alt="Hamburger Icon"/>}
                 {open && <Image src={close} height={31} width={31} alt="Close Button"/> }
               </div>
-              <MobileNav open={open} setOpen={setOpen} jsxNavlinks={jsxNavlinks}/>
+              <MobileNav open={open} setOpen={setOpen} links={navlinks}/>
               
               <div className="hidden md:flex container items-center justify-center p-8 mx-auto capitalize text-sand font-bold">
-                  {jsxNavlinks}
+                {navlinks.map(({link, name}) => {
+                  return <Link href={link} key={link} className={`${pathname === link ? 'border-b-2': ''} hover:border-b-2 mx-9`}>{name}</Link>
+                })}
               </div>
           </nav>
           </header>

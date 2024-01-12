@@ -5,10 +5,10 @@ import { DogInfo } from "../types/DogInfo"
 
 export default function DogDetail(props: DogInfo) {
     return (
-        <div className="py-5 flex flex-row gap-x-5">
+        <div className="py-5 flex flex-col md:flex-row gap-x-5">
                 <Image
                     src={props.src}
-                    className="rounded-md"
+                    className="rounded-md self-center"
                     height={450}
                     width={350} 
                     alt={props.callName}
