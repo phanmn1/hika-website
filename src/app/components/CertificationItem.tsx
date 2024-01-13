@@ -13,6 +13,7 @@ export default function CertificationItem (props: CertItem) {
                     height={217}
                     placeholder='blur'
                     style={props.imageStyle}
+                    blurDataURL='/blur-image.jpg'
                 />
             </figure>
             {props.text && <div className="text-sand">{parser(props.text)}</div>}

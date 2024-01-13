@@ -6,4 +6,5 @@ export type DogInfo = {
     hobby: string
     fact: string
     src: string
+    isLast?: boolean
 }

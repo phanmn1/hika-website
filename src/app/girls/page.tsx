@@ -21,10 +21,18 @@ const girls: DogInfo[] = [
         src: '/photos/F6DD0C0E-7EA7-49E6-B3E8-6A02B2AE4A89.jpg'
     }
 ]
+const markLastItem = (dogs: DogInfo[]) => {
+    let lastElement = dogs[dogs.length - 1] // get last element
+    lastElement.isLast = true
+    return dogs
+}
+
 export default function GirlsPage() {
+
+    const markedArray = markLastItem(girls)
     return (
         <div className="text-sand py-9 md:mx-auto max-w-3xl mx-5">
-               {girls.map((item) => <DogDetail key={item.callName} {...item}/>)} 
+               {markedArray.map((item) => <DogDetail key={item.callName} {...item}/>)} 
         </div>
 
     )

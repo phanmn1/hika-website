@@ -31,10 +31,19 @@ const boys: DogInfo[] = [
     }
 ]
 
+const markLastItem = (dogs: DogInfo[]) => {
+    let lastElement = dogs[dogs.length - 1] // get last element
+    lastElement.isLast = true
+    return dogs
+}
+
 export default function BoysPage()  {
+    
+    const markedArray = markLastItem(boys)
+
     return (
         <div className="text-sand py-9 md:mx-auto max-w-3xl mx-5"> 
-               {boys.map((item) => <DogDetail key={item.callName} {...item}/>)} 
+               {markedArray.map((item) => <DogDetail key={item.callName} {...item}/>)} 
         </div>
 
     )

@@ -5,7 +5,7 @@ import ResourceSection from "../components/ResourceSection"
 
 const resources = [
   {
-    header: 'for puppy parents who want to do it right:',
+    header: 'For puppy parents who want to do it right:',
     sections: [
       {
         sectionTitle: 'The Ideal daily puppy-training routine:',

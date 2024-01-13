@@ -1,4 +1,5 @@
 import Image from "next/image"
+import LineSeparator from "../components/LineSeparator"
 
 export default function AboutPage () {
   return (
@@ -13,6 +14,8 @@ export default function AboutPage () {
           width={300}
           alt="Halloween Pic"
           className="md:float-left rounded-md md:mr-5 md:mt-5 sm:mx-auto sm:my-5"
+          placeholder="blur"
+          blurDataURL="/blur-image.jpg"
         />
         <p className="my-3">Aloha! I am Hikari Watanabe, and I am thrilled to share my story as a passionate dog lover. Born in Japan, raised in Oahu, educated in California, and lived a few years in Oregon, my life took an unexpected turn when my mother faced a cancer diagnosis back in Hawaii. Determined to support her during this challenging time, I made the heartfelt decision to return to my home state.</p>
         <p className="my-3">Returning to Hawaii not only allowed me to be there for my mother but also redirected my path towards following my true passion: dogs.  Since I can remember, my love for dogs has been an integral part of my life. From poring over dog textbooks to creating an art business inspired by dogs, collecting dog-related items, attending dog events, and engaging in conversations about dogs, I have immersed myself in the world of man&#39;s best friend.</p>
@@ -22,6 +25,8 @@ export default function AboutPage () {
             width={300}
             alt="Lady and Amaro"
             className="md:float-right rounded-md md:ml-5 md:mt-5 sm:mx-auto"
+            placeholder="blur"
+            blurDataURL="/blur-image.jpg"
           />
         <p className="my-3">As an avid animal enthusiast, I have cared for various creatures throughout my life; from kabutomushi, fish, hermit crabs, a lovebird, cats, dogs, and the list goes on. I have also fostered neonate kittens and cats at a rescue shelter in California for many years. However, it is my profound dedication to dogs that has shaped my journey as a Cavalier fancier and hobby breeder. I am committed to providing this extraordinary breed to others in a manner that reflects the utmost care and responsibility. I understand the difficulty in finding a breeder who checks all the boxes, as I experienced the same challenge when searching for a Cavalier.</p>
         <p className="my-3">That is why I am determined to be the breeder I wished to find during my own quest. My breeding program prioritizes thorough effort and diligent attention to detail, ensuring the well-being of my dogs, their puppies, and their future owners. While finding someone who meets all the criteria may be rare, I strive to surpass those expectations. Your trust and satisfaction in our breeding practices are of the utmost importance to me. My family and life partner makes it all possible to reach these goals and am also in full appreciation of them. </p>
@@ -29,7 +34,7 @@ export default function AboutPage () {
         </div>
 
         <br/><br/>
-        <hr/>
+        <LineSeparator/>
         <div className="mt-9 text-left">
           <p className="text-3xl text-bold text-center">About Breeding Program</p>
           <p className="text-center">Health details in our Cavaliers are of utmost importance. 
