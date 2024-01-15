@@ -52,7 +52,8 @@ export default function Header() {
           src="/logo.png"
           width={300}
           height={300}
-          alt="logo"/>
+          alt="logo"
+          className="opacity-75"/>
       </div>
           <nav className="bg-header">
               <div className="flex justify-end items-center md:hidden p-8" onClick={() => setOpen(!open)}>

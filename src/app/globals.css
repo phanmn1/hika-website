@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .header-banner {
-  background-image: url(../../public/logo.jpg);
+.header-banner {
+  background-image: url(../../public/IMG_9955.jpg);
   background-position: center;
   background-size: cover;
-} */
+}
 
 .title-shadow {
   text-shadow: 4px 4px 8px black;
