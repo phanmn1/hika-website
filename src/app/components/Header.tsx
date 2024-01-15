@@ -47,8 +47,13 @@ export default function Header() {
 
   return (
       <header>
-      <div className="header-banner min-h-[350px]">
-          </div>
+      <div className="header-banner max-h-min flex justify-center bg-background py-5">
+        <Image
+          src="/logo.png"
+          width={300}
+          height={300}
+          alt="logo"/>
+      </div>
           <nav className="bg-header">
               <div className="flex justify-end items-center md:hidden p-8" onClick={() => setOpen(!open)}>
                 {!open && <Image src={burger} height={32} width={32} alt="Hamburger Icon"/>}
