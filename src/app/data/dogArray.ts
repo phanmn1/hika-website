@@ -36,7 +36,13 @@ export const dogs: DogInfo[] = [
       personality: 'The most balanced out of the lot and is right in the middle of energetic & chill!',
       hobby: 'Getting attention & playing with everyone in the house.',
       fact: 'He is a Poland boy and has a blenheim mark on his head.  He is the most excited wigglebutt out of the crew. His best friend here is Amaro.',
-      src: '/photos/IMG_7764.jpg'
+      src: '/photos/IMG_7764.jpg',
+      photos: [
+        {
+          key: '3',
+          src: '/gallery/IMG_'
+        }
+      ]
   },
   {
       name: 'Midori’s Flowers Mark',
