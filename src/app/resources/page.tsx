@@ -106,7 +106,7 @@ const resources = [
 
 export default function Resources() {
   return (
-    <div className="mx-5">
+    <div className="mx-5 px-2 py-5">
     <div className="py-5">
       <div className={`py-3 text-3xl title-shadow text-sand ${oleo.className}`}>About the Cavalier King Charles Spaniel:</div>
       <div>
