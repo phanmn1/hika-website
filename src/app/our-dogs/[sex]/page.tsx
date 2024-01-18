@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import DogDetail from "../components/DogDetail"
-import { dogs } from '../data/dogArray'
-import { DogInfo } from "../types/DogInfo";
+import DogDetail from "../../components/DogDetail"
+import { dogs } from '../../data/dogArray'
+import { DogInfo } from "../../types/DogInfo";
 
 const markLastItem = (dogs: DogInfo[]) => {
   let lastElement = dogs[dogs.length - 1] // get last element

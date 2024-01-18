@@ -20,11 +20,11 @@ const navlinks: NavItem[]= [
   }, 
   {
     name: 'boys',
-    link: '/boys'
+    link: '/our-dogs/boys'
   },
   {
     name: 'girls',
-    link: '/girls'
+    link: '/our-dogs/girls'
   },
   {
     name: 'puppies',
