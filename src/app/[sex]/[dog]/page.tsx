@@ -18,18 +18,20 @@ interface IImageGalleryProps {
   params : { dog: string}
 }
 
-import photos from '../../data/photos'
+import { photos } from '../../data/dogArray'
 
 export default function ImageGallery({params}: IImageGalleryProps) {
   const { dog } = params
+  const dogPhotos = photos(dog)
   
 
   const [index, setIndex] = useState(-1);
   
   return (
     <Fragment>
+      <div className='py-5'>
   <PhotoAlbum 
-    photos={photos} 
+    photos={dogPhotos} 
     layout="rows" 
     targetRowHeight={150}
     renderPhoto={NextJsImage}
@@ -44,9 +46,10 @@ export default function ImageGallery({params}: IImageGalleryProps) {
       ],
     }}
     />
+    </div>
     
     <Lightbox
-        slides={photos}
+        slides={dogPhotos}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}

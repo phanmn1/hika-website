@@ -1,10 +1,17 @@
+"use client"
+
 import { Fragment } from "react"
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import Image from "next/image"
 import { oleo } from "../global/fonts"
 import { DogInfo } from "../types/DogInfo"
 import LineSeparator from "./LineSeparator"
 
 export default function DogDetail(props: DogInfo) {
+    
+    const { sex, dog } = useParams<{sex: string; dog: string;}>()
+
     return (
         <Fragment>
         <div className="py-5 flex flex-col md:flex-row gap-x-5">
@@ -24,6 +31,11 @@ export default function DogDetail(props: DogInfo) {
                     <div className="my-3">Personality: {props.personality}</div>
                     <div className="my-3">Favorite hobby: {props.hobby}</div>
                     <div className="my-3">Fun fact: {props.fact}</div>
+                </div>
+                <div className="mx-auto">
+                    <Link href={`${sex}/${props.callName.toLowerCase()}`}>
+                        <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">Image Gallery</button>  
+                    </Link>
                 </div>
         </div>
         {!props.isLast && <LineSeparator/>}
