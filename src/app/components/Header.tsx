@@ -60,7 +60,7 @@ export default function Header() {
                 {!open && <Image src={burger} height={32} width={32} alt="Hamburger Icon"/>}
                 {open && <Image src={close} height={31} width={31} alt="Close Button"/> }
               </div>
-              <MobileNav open={open} setOpen={setOpen} links={navlinks}/>
+              <MobileNav open={open} setOpen={setOpen} links={navlinks} pathname={pathname}/>
               
               <div className="hidden md:flex container items-center justify-center p-8 mx-auto capitalize text-sand font-bold">
                 {navlinks.map(({link, name}) => {
