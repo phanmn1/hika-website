@@ -29,7 +29,7 @@ export default function ImageGallery({params}: IImageGalleryProps) {
   
   return (
     <Fragment>
-      <div className='py-5'>
+      <div className='p-5'>
   <PhotoAlbum 
     photos={dogPhotos} 
     layout="rows" 
