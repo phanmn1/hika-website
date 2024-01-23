@@ -15,6 +15,12 @@ export const dogs: DogInfo[] = [
       src: '/gallery/amaro/AMARO2.jpg',
       photos: [
         {
+          key: '0',
+          src: '/gallery/amaro/AMARO1.jpg',
+          height: 7617,
+          width: 11425
+        },
+        {
           key: '1',
           src: '/gallery/amaro/2FE079CC-DED4-4096-8FE3-8478FF8B0AB5.jpg',
           height: 1800,
@@ -88,7 +94,7 @@ export const dogs: DogInfo[] = [
         },
         {
           key: '2',
-          src: '/gallery/luffy/CCCED92E-05D1-4C1F-B711-7D0B884603CD.jpg',
+          src: '/gallery/luffy/FB1A6F25-7771-4B9D-925B-0DEB84ADAE80.jpg',
           height: 3780,
           width: 3024
         },
