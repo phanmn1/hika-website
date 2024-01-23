@@ -17,8 +17,8 @@ export const dogs: DogInfo[] = [
         {
           key: '0',
           src: '/gallery/amaro/AMARO1.jpg',
-          height: 7617,
-          width: 11425
+          height: 1066,
+          width: 1600
         },
         {
           key: '1',
