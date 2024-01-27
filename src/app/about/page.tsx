@@ -1,5 +1,7 @@
 import Image from "next/image"
 import LineSeparator from "../components/LineSeparator"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { faDog } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
 export default function AboutPage () {
   return (
@@ -41,13 +43,22 @@ export default function AboutPage () {
 This includes having all of our dogs professionally tested for their:</p>
 <br/>
 <br/>
-<ul className="list-disc">
+<ul className="list-disc list-outside">
   <li>Heart (for MVD or mitral valve disease)</li>
+  Heart testing reduces the chance of passing down congenital heart disease, which can cause a range of symptoms ranging from trouble exercising to heart failure.
+
+  <br/>
+  <br/>
   <li>Eyes (for eye disorders)</li>
+  Eye testing reduces the chance of passing down a wide range of hereditary eye illnesses including retinal dysplasia, lens luxation, and glaucoma, which can cause impaired vision or blindness.
+  <br/>
+  <br/>
   <li>Patellas (for patellar luxation or loose knees)</li>
+  Knee testing reduces the chance of passing down Patellar Luxation, which results in the kneecap becoming displaced or dislocated and can cause mild to severe joint pain.
+  <br/>
 </ul>
 <br/>
-They are also DNA tested and clear for:
+They are also DNA tested for:
 <br/>
 <br/>
 <ul className="list-disc">
@@ -55,12 +66,12 @@ They are also DNA tested and clear for:
   <li>DE (Dry Eye Syndrome)</li>
   <li>EFS (Episodic Falling Syndrome)</li>
   <li>MD (Muscular Dystrophy)</li>
+  <li>DM (Degenerative Myelopathy)</li>
+  <li>MCADD (Medium Chain Acyl-CoA Dehydrogenase Deficiency)</li>
 </ul>
 <br/>
-which are all extremely harmful for them. Please go to my resources page to educate yourself more on these conditions to understand why these are very important to know about before owning a Cavalier King Charles Spaniel. Educating yourself thoroughly in the breed you want is the first step to finding the right puppy and choosing a reputable breeder who truly cares for the breed they focus on. 
-<br/><br/>
-Our Cavaliers are registered in AKC and CKCSC-USA which are the two only legitimate registries in the U.S. for cavaliers.  The CKCSC-USA has a code of ethics which each member must follow. The puppies we produce are well-bred and raised as family to be well-socialized, friendly, playful, and just overall amazing companions. I breed for quality in health, correct temperament, & comformation to the standard of the breed. Once you own a cavalier, you will understand and feel the difference of the immense love a cavalier can give you. I’ve owned a few different breeds from a chihuahua to a mini american sheperd but until I owned my first cavalier, it felt like I found true love in a dog that I’ve never experienced. Something about how their adorable “melty” eyes reflect your gaze and can soothe your soul is definitely a super-power I believe they have. 
-
+which can be extremely harmful for them if not tested and educated properly on them. Please go to my resources page for more on these conditions and to understand why these are very important to know about before owning a Cavalier King Charles Spaniel. Educating yourself thoroughly in the breed you want is the first step to finding the right puppy and choosing a reputable breeder who truly cares for the breed they focus on. <br/><br/>
+The puppies we produce are well-bred and raised as family to be well-socialized, friendly, playful, and just overall amazing companions. I breed for quality in health, correct temperament, & conformation to the standard of the breed. Once you own a cavalier, you will understand and feel the difference of the immense love a cavalier can give you. I’ve owned a few different breeds but until I owned my first cavalier, it felt like I found true love in a dog that I’ve never experienced. Something about how their adorable “melty” eyes reflect your gaze and can soothe your soul is definitely a super-power I believe they have.
 
         </div>
       </div>

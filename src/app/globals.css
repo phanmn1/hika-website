@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .header-banner {
   background-image: url(../../public/IMG_9955.jpg);
   background-position: center;
@@ -23,5 +24,7 @@ a:hover, button:hover {
 .background-height {
   min-height: calc(100vh - 518px);
 }
+
+
 
 
