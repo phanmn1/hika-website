@@ -76,54 +76,54 @@ export const dogs: DogInfo[] = [
         }
       ]
   },
-  {
-      name: 'Monkey D. Luffy',
-      callName: 'Luffy',
-      coat: 'Blenheim',
-      sex: 'M',
-      personality: 'The most balanced out of the lot and is right in the middle of energetic & chill!',
-      hobby: 'Getting attention & playing with everyone in the house.',
-      fact: 'He is a Poland boy and has a blenheim mark on his head.  He is the most excited wigglebutt out of the crew. His best friend here is Amaro.',
-      src: '/photos/IMG_7764.jpg',
-      photos: [
-        {
-          key: '1',
-          src: '/gallery/luffy/CCCED92E-05D1-4C1F-B711-7D0B884603CD.jpg',
-          width: 1125,
-          height: 1515
-        },
-        {
-          key: '2',
-          src: '/gallery/luffy/FB1A6F25-7771-4B9D-925B-0DEB84ADAE80.jpg',
-          height: 3780,
-          width: 3024
-        },
-        {
-          key: '3',
-          src: '/gallery/luffy/IMG_2078.jpg',
-          width: 3024,
-          height: 4032
-        },
-        {
-          key: '4',
-          src: '/gallery/luffy/IMG_2281.jpg',
-          width: 3024,
-          height: 4032
-        },
-        {
-          key: '5',
-          src: '/gallery/luffy/IMG_7966.jpg',
-          width: 1454,
-          height: 2068
-        }, 
-        {
-          key: '6',
-          src: '/gallery/luffy/IMG_8398.jpg',
-          width: 1124,
-          height: 1173
-        }
-      ]
-  },
+  // {
+  //     name: 'Monkey D. Luffy',
+  //     callName: 'Luffy',
+  //     coat: 'Blenheim',
+  //     sex: 'M',
+  //     personality: 'The most balanced out of the lot and is right in the middle of energetic & chill!',
+  //     hobby: 'Getting attention & playing with everyone in the house.',
+  //     fact: 'He is a Poland boy and has a blenheim mark on his head.  He is the most excited wigglebutt out of the crew. His best friend here is Amaro.',
+  //     src: '/photos/IMG_7764.jpg',
+  //     photos: [
+  //       {
+  //         key: '1',
+  //         src: '/gallery/luffy/CCCED92E-05D1-4C1F-B711-7D0B884603CD.jpg',
+  //         width: 1125,
+  //         height: 1515
+  //       },
+  //       {
+  //         key: '2',
+  //         src: '/gallery/luffy/FB1A6F25-7771-4B9D-925B-0DEB84ADAE80.jpg',
+  //         height: 3780,
+  //         width: 3024
+  //       },
+  //       {
+  //         key: '3',
+  //         src: '/gallery/luffy/IMG_2078.jpg',
+  //         width: 3024,
+  //         height: 4032
+  //       },
+  //       {
+  //         key: '4',
+  //         src: '/gallery/luffy/IMG_2281.jpg',
+  //         width: 3024,
+  //         height: 4032
+  //       },
+  //       {
+  //         key: '5',
+  //         src: '/gallery/luffy/IMG_7966.jpg',
+  //         width: 1454,
+  //         height: 2068
+  //       }, 
+  //       {
+  //         key: '6',
+  //         src: '/gallery/luffy/IMG_8398.jpg',
+  //         width: 1124,
+  //         height: 1173
+  //       }
+  //     ]
+  // },
   {
       name: 'Midori’s Flowers Mark',
       callName: 'Mark', 
@@ -196,7 +196,7 @@ export const dogs: DogInfo[] = [
         },
         {
           key: '2',
-          src: '/gallery/lady/3A2A1C1E-B9A1-49E5-ACB7-8DD9146B8F2E.jpg',
+          src: '/gallery/lady/28A91BC3-D067-4329-9C69-1664352B0F78.jpg',
           width: 1044,
           height: 1471
         },
