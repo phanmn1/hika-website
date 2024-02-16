@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import DogDetail from "../../components/DogDetail"
 import { dogs } from '../../data/dogArray'
 import { DogInfo } from "../../types/DogInfo";
+import LineSeparator from "@/app/components/LineSeparator";
 
 const markLastItem = (dogs: DogInfo[]) => {
   let lastElement = dogs[dogs.length - 1] // get last element
@@ -29,6 +30,7 @@ export default function DogsPage({params}: IDogsProps)  {
   return (
     <Fragment>
       <div className="text-7xl text-center py-5 text-sand">{title}</div>
+      <LineSeparator/>
       <div className="text-sand py-9 md:mx-auto max-w-3xl mx-5"> 
              {markedArray.map((item) => <DogDetail key={item.callName} {...item}/>)} 
       </div>

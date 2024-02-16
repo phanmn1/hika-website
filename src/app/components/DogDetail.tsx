@@ -32,12 +32,13 @@ export default function DogDetail(props: DogInfo) {
                     <div className="my-3">Favorite hobby: {props.hobby}</div>
                     <div className="my-3">Fun fact: {props.fact}</div>
                 </div>
-                <div className="mx-auto">
+                
+        </div>
+        <div className="flex justify-center">
                     <Link href={`${sex}/${props.callName.toLowerCase()}`}>
                         <button className="rounded-full bg-header text-sand p-3 m-3 hover:bg-sand hover:text-header">Image Gallery</button>  
                     </Link>
                 </div>
-        </div>
         {!props.isLast && <LineSeparator/>}
         </Fragment>
     )
