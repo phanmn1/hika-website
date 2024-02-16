@@ -24,4 +24,12 @@ a:hover, button:hover {
   min-height: calc(100vh - 518px);
 }
 
+.parent-marker li::marker {
+  content: '✤ ';
+}
+
+.child-marker li::marker {
+  content: '➢ '
+}
+
 

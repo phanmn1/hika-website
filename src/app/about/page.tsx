@@ -18,7 +18,7 @@ export default function AboutPage () {
           blurDataURL="/blur-image.jpg"
         />
         <p className="my-3">Aloha! I am Hikari Watanabe, and I am thrilled to share my story as a passionate dog lover. Born in Japan, raised in Oahu, educated in California, and lived a few years in Oregon, my life took an unexpected turn when my mother faced a cancer diagnosis back in Hawaii. Determined to support her during this challenging time, I made the heartfelt decision to return to my home state.</p>
-        <p className="my-3">Returning to Hawaii not only allowed me to be there for my mother but also redirected my path towards following my true passion: dogs.  Since I can remember, my love for dogs has been an integral part of my life. From poring over dog textbooks to creating an art business inspired by dogs, collecting dog-related items, attending dog events, and engaging in conversations about dogs, I have immersed myself in the world of man&#39;s best friend.</p>
+        <p className="my-3">Returning to Hawaii not only allowed me to be there for my mother but also redirected my path towards following my true passion: dogs.  Since I can remember, my love for dogs has been an integral part of my life. From pouring over dog textbooks to creating an art business inspired by dogs, collecting dog-related items, attending dog events, and engaging in conversations about dogs, I have immersed myself in the world of man&#39;s best friend.</p>
         <Image
             src="/photos/IMG_8508.jpg"
             height={200}
@@ -41,16 +41,31 @@ export default function AboutPage () {
 This includes having all of our dogs professionally tested for their:</p>
 <br/>
 <br/>
-<ul className="list-disc">
-  <li>Heart (for MVD or mitral valve disease)</li>
-  <li>Eyes (for eye disorders)</li>
-  <li>Patellas (for patellar luxation or loose knees)</li>
+<ul className="list-disc parent-marker">
+  <li>
+    Heart (for MVD or mitral valve disease)
+    <ul className="ps-5 py-1 list-disc child-marker">
+      <li>Heart testing reduces the chance of passing down congenital heart disease, which can cause a range of symptoms ranging from trouble exercising to heart failure.</li>
+    </ul>
+  </li> 
+  <li>
+    Eyes (for eye disorders)
+    <ul className="ps-5 py-1 list-disc child-marker">
+      <li>Eye testing reduces the chance of passing down a wide range of hereditary eye illnesses including retinal dysplasia, lens luxation, and glaucoma, which can cause impaired vision or blindness.</li>
+    </ul>
+  </li>
+  <li>
+    Patellas (for patellar luxation or loose knees)
+    <ul className="ps-5 py-1 list-disc child-marker">
+      <li>Knee testing reduces the chance of passing down Patellar Luxation, which results in the kneecap becoming displaced or dislocated and can cause mild to severe joint pain.</li>
+    </ul>
+  </li>
 </ul>
 <br/>
 They are also DNA tested and clear for:
 <br/>
 <br/>
-<ul className="list-disc">
+<ul className="list-disc parent-marker">
   <li>CC (Curly Coat)</li>
   <li>DE (Dry Eye Syndrome)</li>
   <li>EFS (Episodic Falling Syndrome)</li>
