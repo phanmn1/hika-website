@@ -1,7 +1,7 @@
 import Image from "next/image"
 import InstagramIcon from "../../../public/svg/instagram-svgrepo-com.svg"
 import FacebookIcon from "../../../public/svg/facebook-svgrepo-com.svg"
-import { oleo } from "../global/fonts"
+import { oleo } from "@/global/fonts"
 
 export default function Contact () {
   return (<div className="py-7 px-5 text-sand">

@@ -1,6 +1,6 @@
-import CertificationList from "./components/CertificationList"
+import CertificationList from "@/components/CertificationList"
 import Image from "next/image"
-import LineSeparator from "./components/LineSeparator"
+import LineSeparator from "@/components/LineSeparator"
 
 
 

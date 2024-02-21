@@ -1,5 +1,5 @@
 import Image from "next/image"
-import LineSeparator from "../components/LineSeparator"
+import LineSeparator from "@/components/LineSeparator"
 
 export default function AboutPage () {
   return (

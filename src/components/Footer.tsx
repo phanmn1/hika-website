@@ -1,6 +1,6 @@
 import Image from "next/image"
-import InstagramIcon from "../../../public/svg/instagram-svgrepo-com.svg"
-import FacebookIcon from "../../../public/svg/facebook-svgrepo-com.svg"
+import InstagramIcon from "../../public/svg/instagram-svgrepo-com.svg"
+import FacebookIcon from "../../public/svg/facebook-svgrepo-com.svg"
 
 export default function Footer() {
   return (

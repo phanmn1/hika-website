@@ -1,4 +1,4 @@
-import DogDetail from "../components/DogDetail"
+import DogDetail from "./DogDetail"
 import { DogInfo } from "../types/DogInfo"
 
 const dogs: DogInfo[] = [

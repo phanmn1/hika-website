@@ -1,7 +1,7 @@
 import { Fragment } from "react"
-import { oleo } from "../global/fonts"
-import ResourceLinks from "../components/ResourceLinks"
-import ResourceSection from "../components/ResourceSection"
+import { oleo } from "@/global/fonts"
+import ResourceLinks from "@/components/ResourceLinks"
+import ResourceSection from "@/components/ResourceSection"
 
 const resources = [
   {

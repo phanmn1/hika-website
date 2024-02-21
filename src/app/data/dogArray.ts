@@ -1,6 +1,6 @@
 import { PhotoAlbumProps } from "react-photo-album";
-import { DogInfo } from "../types/DogInfo"
-import { Photo } from "../types/Photo";
+import { DogInfo } from "../../types/DogInfo"
+import { Photo } from "../../types/Photo";
 const breakpoints = [3840, 2400, 1080, 640, 384, 256, 128, 96, 64, 48];
 
 export const dogs: DogInfo[] = [

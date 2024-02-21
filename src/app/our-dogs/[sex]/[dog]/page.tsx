@@ -2,7 +2,7 @@
 
 import PhotoAlbum from 'react-photo-album'
 import { dogs } from '../../../data/dogArray'
-import NextJsImage from '@/app/components/NextJsImage'
+import NextJsImage from '@/components/NextJsImage'
 import { Fragment, useState } from 'react'
 import Lightbox from 'yet-another-react-lightbox'
 import "yet-another-react-lightbox/styles.css";

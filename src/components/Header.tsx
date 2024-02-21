@@ -1,11 +1,11 @@
 'use client'
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { NavItem } from "../types/NavItem"
+import { NavItem } from "@/types/NavItem"
 import { useState } from "react"
 import MobileNav from "./MobileNav"
-import burger from '../../../public/svg/burger-menu-svgrepo-com.svg'
-import close from '../../../public/svg/close-icon.svg'
+import burger from '../../public/svg/burger-menu-svgrepo-com.svg'
+import close from '../../public/svg/close-icon.svg'
 import Image from "next/image"
 
 

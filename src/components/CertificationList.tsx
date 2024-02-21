@@ -1,14 +1,14 @@
-import { CertItem } from "../types/CertItem"
+import { CertItem } from "@/types/CertItem"
 import CertificationItem from "./CertificationItem"
 import { CSSProperties } from 'react'
-import PuppyCulture from "../../../public/puppy_culture.png"
-import ENS_ESI from "../../../public/ens_esi.png"
-import OFA from "../../../public/ofa.png"
-import BreedersBootcamp from "../../../public/breeders_bootcamp.png"
-import CKCS from "../../../public/ckcs.png"
-import CKCS_Heart from "../../../public/ckcs_heart.jpg"
-import GOOD_DOG from '../../../public/alohana-cavaliers-hawaii-badge.png'
-import RED_CROSS from '../../../public/red_cross.jpg'
+import PuppyCulture from "../../public/puppy_culture.png"
+import ENS_ESI from "../../public/ens_esi.png"
+import OFA from "../../public/ofa.png"
+import BreedersBootcamp from "../../public/breeders_bootcamp.png"
+import CKCS from "../../public/ckcs.png"
+import CKCS_Heart from "../../public/ckcs_heart.jpg"
+import GOOD_DOG from '../../public/alohana-cavaliers-hawaii-badge.png'
+import RED_CROSS from '../../public/red_cross.jpg'
 
 
 const imageStyle: CSSProperties = {
