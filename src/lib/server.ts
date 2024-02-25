@@ -14,7 +14,7 @@ const testPost = async (formData: FormData) => {
   try {
     const s = await fs.readFile('src/lib/template-html.html')
     const $ =  cheerio.load(s)
-    const context = { 'test': 'test string in div'}
+    const context = { 'test': title}
 
     const template = $("#test-handlebars").html()
     if(template != null) {
