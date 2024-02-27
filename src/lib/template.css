@@ -1,7 +1,6 @@
 body {
   background: white;
-  width: 21cm;
-  height: 29.7cm; 
+  width: 21cm; 
   margin: 2rem auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -9,6 +8,14 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
+}
+
+.header-container-question {
+  font-weight: bold;
+}
+
+.header-container-response {
+  font-style: italic;
 }
 
 .logo {
@@ -25,7 +32,7 @@ body {
 }
 
 .question {
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .question-item {
@@ -34,10 +41,31 @@ body {
 }
 
 .response-item {
+  margin-top: 1rem;
   font-weight: normal;
   font-size: 16px;
   font-style: italic;
 }
 
+.form-container {
+  margin-left: 2rem;
+}
+
+.form-labels {
+  margin: 1rem 1rem  ;
+}
+
+.note-title {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.note-item {
+  margin: 1rem 0;
+}
+
+.footer {
+  margin: 3rem 0;
+}
 
 
