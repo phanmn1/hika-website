@@ -1,0 +1,17 @@
+<% layout('./layout') %>
+<header>
+  <div class="header-container">
+    <section class="header-container-section">
+      <%~ await includeAsync("./profile", { profile: it.profile }) %> 
+    </section>
+    <section class="header-container-item">
+      <figure>
+        <img src="../../public/logo.png" alt="logo" class="logo"/>
+      </figure>
+    </section>
+    <section>
+      <h1 class="question-title">Questions for prospective owner</h1>
+      <div class="question-container">
+        <%~ await includeAsync("./questions", { questions: it.questions }) %> 
+      </div>
+</header>

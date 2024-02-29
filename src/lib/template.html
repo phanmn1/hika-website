@@ -6,50 +6,52 @@
   <title>Cavalier Puppy Application</title>
   <link rel="stylesheet" href="template.css"/>
 </head>
+
 <body>
-  <main>
+  <script id="test-handlebars" type="x-tmpl-mustache">
+  <main id="test-handlebars-finished">
     <header>
       <div class="header-container">
         <section class="header-container-section">
           <div>
             <span class="header-container-question">Today&#39;s date: </span>
-            <span class="header-container-response">1/1/1990</span></div>
+            <span class="header-container-response">{{profile.todayDate}}</span></div>
           <div>
             <span class="header-container-question">First and Last name:</span> 
-            <span class="header-container-response">John Doe</span></div>
+            <span class="header-container-response">{{profile.name}}</span></div>
           <div>
             <span class="header-container-question">Your birthdate: </span> 
-            <span class="header-container-response">1/1/1978</span>
+            <span class="header-container-response">{{profile.birthdate}}</span>
           </div>
           <div>
             <span class="header-container-question">Street address: </span> 
-            <span class="header-container-response">1255 West drive</span></div>
+            <span class="header-container-response">{{profile.address}}</span></div>
           <div>
             <span class="header-container-question">City: </span>
-            <span class="header-container-response">Beaverton</span>
+            <span class="header-container-response">{{profile.city}}</span>
           </div>
           <div>
             <span class="header-container-question">State: </span>
-            <span class="header-container-response">Oregon</span></div>
+            <span class="header-container-response">{{profile.state}}</span></div>
           <div>
             <span class="header-container-question">Zipcode: </span>
-            <span class="header-container-response">980890</span>
+            <span class="header-container-response">{{profile.zip}}</span>
           </div>
           <div>
             <span class="header-container-question">Phone #:</span>
-            <span class="header-container-response">555-555-5555</span>
+            <span class="header-container-response">{{profile.phone}}</span>
           </div>
           <div>
             <span class="header-container-question">E-mail address: </span>
-            <span class="header-container-response">test@email.com</span>
+            <span class="header-container-response">{{profile.email}}</span>
           </div>
           <div>
             <span class="header-container-question">Profession: </span>
-            <span class="header-container-response">Test profession</span>
+            <span class="header-container-response">{{profile.profession}}</span>
           </div>
           <div>
             <span class="header-container-question">Your partners profession:</span>
-            <span class="header-container-response">Test profession</span>
+            <span class="header-container-response">{{profile.partnerProfession}}</span>
           </div>
         </section>
         <section class="header-container-item">
@@ -62,10 +64,12 @@
     <section>
       <h1 class="question-title">Questions for prospective owner</h1>
       <div class="question-container">
+      {{#questions}}
       <div class="question">
-        <div class="question-item">Have you ever owned a cavalier or currently have one now? If not, do you know of any cavaliers?</div>
-        <div class="response-item">Praesent et molestie metus. Mauris euismod euismod leo, ac molestie arcu ultricies eu. Suspendisse ac elit at orci pretium aliquam. Nulla et imperdiet libero, at iaculis massa. Sed nec ligula congue, euismod nulla sit amet, pellentesque neque. Integer rhoncus tincidunt eros, eget ultricies odio vestibulum condimentum. Mauris faucibus ornare eros, nec sodales nunc imperdiet in. Sed sed tincidunt massa. Suspendisse vel nunc dictum, cursus risus sit amet, volutpat massa. Suspendisse mattis justo eget pretium dapibus. Maecenas leo nibh, aliquet ut faucibus sed, accumsan in turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut eu odio mauris. Ut pretium ac velit sit amet ornare.</div>
+        <div class="question-item">{{question}}</div>
+        <div class="response-item">{{response}}</div>
       </div>
+      {{/questions}}
       <div class="question">
         <div class="question-item">Have you owned and/or raised a puppy before? If so, please tell me about your past or current dog(s) or any other pet you have owned? If not, please discuss with me what your plans to train a young puppy and know what to expect. If you haven&#39;t owned or raised a puppy before I'd be happy to help.</div>
         <div class="response-item">Praesent et molestie metus. Mauris euismod euismod leo, ac molestie arcu ultricies eu. Suspendisse ac elit at orci pretium aliquam. Nulla et imperdiet libero, at iaculis massa. Sed nec ligula congue, euismod nulla sit amet, pellentesque neque. Integer rhoncus tincidunt eros, eget ultricies odio vestibulum condimentum. Mauris faucibus ornare eros, nec sodales nunc imperdiet in. Sed sed tincidunt massa. Suspendisse vel nunc dictum, cursus risus sit amet, volutpat massa. Suspendisse mattis justo eget pretium dapibus. Maecenas leo nibh, aliquet ut faucibus sed, accumsan in turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut eu odio mauris. Ut pretium ac velit sit amet ornare.</div>
@@ -194,17 +198,16 @@
     <section>
       <div>Thank you so much for taking your time to fill out this application and I will contact you as soon as possible after I review everything.</div>
     </section>
+    <footer class="footer">
+      <div class="note-title">Notes:</div>
+      <div id="boarding" class="note-item">
+        <sup>[1]</sup> I plan to have Cavaliers from my breeding to be able to board in my home for owners who have bought a dog from me but at reasonable cost. I do not recommend dog boarding facilities where all types of dogs are lumped in together. Best would be a family member or trusted friend being able to take care of your Cavalier where they are familiar.
+      </div>
+      <div id="akc" class="note-item">
+        <sup>[2]</sup> Due to the dog being a companion specimen to avoid those who follow puppy mill practices who ignore the many years of statistical research and specialist recommendations for the health and care of the Cavalier. (To ethically and properly conserve any breed, there is a lot of knowledge and a lot of commitment, time, and investments into doing the best work we can to breed the healthiest dogs and to best represent the breed per the breed standard. Very rarely I will give full registration for show prospects and to knowledgable owners I really trust that truly care for the breed. Please let me know if you want to touch more on this topic).
+      </div>
+    </footer>
   </main>
-  
-  
-  <footer class="footer">
-    <div class="note-title">Notes:</div>
-    <div id="boarding" class="note-item">
-      <sup>[1]</sup> I plan to have Cavaliers from my breeding to be able to board in my home for owners who have bought a dog from me but at reasonable cost. I do not recommend dog boarding facilities where all types of dogs are lumped in together. Best would be a family member or trusted friend being able to take care of your Cavalier where they are familiar.
-    </div>
-    <div id="akc" class="note-item">
-      <sup>[2]</sup> Due to the dog being a companion specimen to avoid those who follow puppy mill practices who ignore the many years of statistical research and specialist recommendations for the health and care of the Cavalier. (To ethically and properly conserve any breed, there is a lot of knowledge and a lot of commitment, time, and investments into doing the best work we can to breed the healthiest dogs and to best represent the breed per the breed standard. Very rarely I will give full registration for show prospects and to knowledgable owners I really trust that truly care for the breed. Please let me know if you want to touch more on this topic).
-    </div>
-  </footer>
+</script>
 </body>
 </html>
