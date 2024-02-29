@@ -99,8 +99,8 @@ const testPost = async (formData: FormData) => {
       const browser = await puppeteer.launch({headless: true})
       const page = await browser.newPage()
 
-      const html = await `<style> ${readFileSync('src/lib/template.css', 'utf-8')} </style> ${res}`
-      await page.setContent(html, { waitUntil: "networkidle2"})
+      //const html = await `<style> ${readFileSync('src/lib/template.css', 'utf-8')} </style> ${res}`
+      await page.setContent(res, { waitUntil: "networkidle2"})
 
       // console.log(html)
 
