@@ -1,0 +1,69 @@
+<h1>Prospective owner's preferences:</h1>
+<div class="form-container">
+  <div>Gender preference: (Male) (Female)
+  <form class="form-labels">
+    <div>
+      <input name="male" type="radio" disabled="disabled" 
+        <% if( it.preferences.gender === "m") { %> 
+          <%= "checked='checked'" %> 
+        <% } %>
+      />
+      <label for="male">Male</label>
+    </div>
+    <div>
+      <input name="female" type="radio" disabled="disabled" 
+        <% if( it.preferences.gender === "f") { %> 
+          <%= "checked='checked'" %> 
+        <% } %>
+      />
+      <label for="female">Female</label>
+    </div>
+  </form>
+  </div>
+<div>Color preference: (Ruby, Black & Tan, Tricolor, Blenheim, or any)</div>
+<form class="form-labels">
+  <div>
+    <input name="ruby" type="checkbox" disabled="disabled" 
+      <% if( it.preferences.color.includes('ruby')) { %> 
+        <%= "checked='checked'" %> 
+      <% } else { %> 
+        <%= "" %>
+        <% } %>
+      />
+    <label for="ruby">Ruby</label>
+  </div>
+  <div>
+    <input name="bnt" type="checkbox" disabled="disabled" 
+      <% if( it.preferences.color.includes('bnt')) { %> 
+        <%= "checked='checked'" %> 
+      <% } else { %> 
+        <%= "" %>
+        <% } %>
+      />
+    <label for="bnt">Black & Tan</label>
+  </div>
+  <div>
+    <input name="tricolor" type="checkbox" disabled="disabled" 
+      <% if( it.preferences.color.includes('tricolor')) { %> 
+        <%= "checked='checked'" %> 
+      <% } else { %> 
+        <%= "" %>
+        <% } %>
+      />
+    <label for="tricolor">Tricolor</label>
+  </div>
+  <div>
+    <input name="blenheim" type="checkbox" disabled="disabled" 
+      <% if( it.preferences.color.includes('blenheim')) { %> 
+        <%= "checked='checked'" %> 
+      <% } else { %> 
+        <%= "" %>
+        <% } %>
+      />
+    <label for="blenheim">Blenheim</label>
+  </div>
+  <div>
+
+  </div>
+</form>
+</div>
