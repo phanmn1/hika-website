@@ -1,11 +1,13 @@
-<% layout('./layout') %>
+<% layout('../templates/layout') %>
   <div class="profile-container">
     <section class="header-container-section">
       <%~ await includeAsync("./profile", { profile: it.profile }) %> 
     </section>
     <section class="header-container-item">
       <figure>
-        <img src="../../public/logo.png" alt="logo" class="logo"/>
+        <img src= 
+          <%= 'data:image/png;base64,' + it.img %>
+        alt="logo" class="logo"/>
       </figure>
     </section>
   </div>
