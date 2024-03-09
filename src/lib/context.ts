@@ -7,8 +7,7 @@ interface IFormInfo {
   preferences: {
     gender: string,
     color: string[]
-  }, 
-  img: string
+  } 
 }
 
 const context: IFormInfo = {
