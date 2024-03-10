@@ -1,11 +1,6 @@
 import { testPost } from "@/lib/server"
+import ApplicationForm from "./ApplicationForm"
 
 export default function BackendTest () {
-  return (
-    <div>
-      <form action={testPost}>
-        <input type="text" placeholder="title" name="title"/>
-        <button>Submit</button>
-      </form>
-    </div>)
+  return (<ApplicationForm testPost={testPost}/>)
 }

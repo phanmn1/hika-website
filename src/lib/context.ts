@@ -1,3 +1,4 @@
+
 import { FormInfo } from "@/types/FormInfo"
 import { readFileSync } from "fs"
 
@@ -7,7 +8,8 @@ interface IFormInfo {
   preferences: {
     gender: string,
     color: string[]
-  } 
+  },
+  img?: string
 }
 
 const context: IFormInfo = {
@@ -127,6 +129,7 @@ const base64Encode = (file: any) => {
 }
 
 const buildContext = (context: any): IFormInfo => {
+
   return {
     "profile": [
       { "question": "Today's date: ", "response": "1/1/1990"},
