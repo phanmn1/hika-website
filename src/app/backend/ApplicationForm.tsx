@@ -6,31 +6,31 @@ import { FocusEvent, useState } from 'react';
 export interface IApplicationFormValues {
     firstName: string
     lastName: string
-    // birthdate: string
-    // todayDate: string
-    // address: string
-    // city: string
-    // state: string
-    // zip: string
-    // phone: string
-    // email: string
-    // profession: string
-    // partnerProfession: string
+    birthdate: string
+    //todayDate: string
+    address: string
+    city: string
+    state: string
+    zip: string
+    phone: string
+    email: string
+    profession: string
+    partnerProfession: string
 }
 
 const initalValues: IApplicationFormValues = {
     firstName: '', 
     lastName: '', 
-    // birthdate: '',
-    // todayDate: '',
-    // address: '', 
-    // city: '', 
-    // state: '', 
-    // zip: '', 
-    // phone: '',
-    // email: '', 
-    // profession: '',
-    // partnerProfession: '',
+    birthdate: '',
+    //todayDate: '',
+    address: '', 
+    city: '', 
+    state: '', 
+    zip: '', 
+    phone: '',
+    email: '', 
+    profession: '',
+    partnerProfession: '',
 
 
 }
@@ -111,12 +111,12 @@ export default function ApplicationForm (props: any) {
               <div className='col-span-full'>
                 <label htmlFor='profession' className='block text-sm font-medium leading-6 text-sand mb-2'>Profession</label>
                 <Field name='profession' type='text' placeholder='Profession' className="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-                <ErrorMessage name='professsion'>{msg => <div className='text-red text-xs italic'>{msg}</div> }</ErrorMessage>
+                <ErrorMessage name='profession'>{msg => <div className='text-red text-xs italic'>{msg}</div> }</ErrorMessage>
               </div> 
               <div className='col-span-full'>
-                <label htmlFor='partner-profession' className='block text-sm font-medium leading-6 text-sand mb-2'>Parner Profession</label>
-                <Field name='partner-profession' type='text' placeholder='Partner Profession' className="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-                <ErrorMessage name='partner-rofesssion'>{msg => <div className='text-red text-xs italic'>{msg}</div> }</ErrorMessage>
+                <label htmlFor='partnerProfession' className='block text-sm font-medium leading-6 text-sand mb-2'>Parner Profession</label>
+                <Field name='partnerProfession' type='text' placeholder='Partner Profession' className="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+                <ErrorMessage name='partnerProfession'>{msg => <div className='text-red text-xs italic'>{msg}</div> }</ErrorMessage>
               </div> 
           
           
