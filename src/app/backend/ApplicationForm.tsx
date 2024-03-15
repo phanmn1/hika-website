@@ -1,6 +1,7 @@
 'use client'
 import ApplicationFormValidationSchema from './ApplicationFormValidationSchema';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
+import QuestionArray, { QuestionItem } from '@/data/questions'
 import { FocusEvent, useState } from 'react';
 
 export interface IApplicationFormValues {
@@ -36,10 +37,9 @@ const initalValues: IApplicationFormValues = {
 }
 
 export default function ApplicationForm (props: any) {
-  const [inputType, setInputType] = useState('text') 
-	
-  const componentType = typeof window === 'undefined' ? 'server' : 'client'
-  console.log(componentType)
+  
+
+
 
   return (
     <Formik
@@ -118,13 +118,80 @@ export default function ApplicationForm (props: any) {
                 <Field name='partnerProfession' type='text' placeholder='Partner Profession' className="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 <ErrorMessage name='partnerProfession'>{msg => <div className='text-red text-xs italic'>{msg}</div> }</ErrorMessage>
               </div> 
-          
-          
-
-                <button type='submit'>Submit</button>
             </div>
-          </div>
-        </Form>
-      </Formik>
-  )
-}
+            {/* Question forms  */}
+            <div>
+              {questions(QuestionArray)}
+            </div>
+            <div>
+              <div>Prospective owner's preferences:</div>
+
+              <div>
+                <label htmlFor='gender'>Gender preference</label>
+                <Field name='gender' as='select'>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </Field>
+              </div>
+
+              <div className='mb-2'>
+                <span>Color Preference (select any that apply)</span>
+                <div>
+                  <label className='inline-flex items-center'>
+                    <Field name='ruby' type='checkbox' className='form-checkbox'/>
+                    <span className='ml-2'>Ruby</span>
+                  </label> 
+                </div>
+                
+                <div>
+                  <label className='inline-flex items-center'>
+                    <Field name='bnt' type='checkbox' className='form-checkbox'/>
+                    <span className='ml-2'>Black & Tan</span>
+                  </label> 
+                </div>
+
+                <div>
+                  <label className='inline-flex items-center'>
+                    <Field name='tricolor' type='checkbox' className='form-checkbox'/>
+                    <span className='ml-2'>Tricolor</span>
+                  </label> 
+                </div>
+
+                <div>
+                  <label className='inline-flex items-center'>
+                    <Field name='blenheim' type='checkbox' className='form-checkbox'/>
+                    <span className='ml-2'>Blenheim</span>
+                  </label> 
+                </div>
+
+                <div>
+                  <label className='inline-flex items-center'>
+                    <Field name='any' type='checkbox' className='form-checkbox'/>
+                    <span className='ml-2'>Any</span>
+                  </label> 
+                </div>
+
+              </div>
+
+              </div>
+
+              <button type='submit'>Submit</button>
+            </div>
+          </Form>
+        </Formik>
+    )
+  }
+
+  const questions = (questions: QuestionItem[]) => {
+    const jsx = questions.map((question) => {
+      return (
+        <div className='my-5' key={question["id"]}>
+          <label htmlFor={`question${question["id"]}`} className='block text-sm font-medium leading-6 text-sand mb-2'>{question.question}</label>
+          <Field name={`question${question["id"]}`} as='textarea' placeholder='response' className='form-textarea rounded-md block w-full px-3 py-1.5'/>
+          <ErrorMessage name={`question${question["id"]}`}>{msg => <div className='text-red text-xs italic'>{msg}</div> }</ErrorMessage>
+        </div>
+      )
+    })
+
+    return jsx
+  }
