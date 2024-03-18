@@ -37,7 +37,7 @@ const initalValues: IApplicationFormValues = {
 }
 
 export default function ApplicationForm (props: any) {
-  
+  const [ blenheim, setBlenheim ] = useState(false)
 
 
 
@@ -50,8 +50,10 @@ export default function ApplicationForm (props: any) {
         await props.testPost(values)
       }}>
         <Form>
-          <div className="w-full max-w-lg">
-            <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div className="w-full max-w-5xl">
+            {/* Profile Information */}
+            <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 px-3 py-4 border-2 rounded-lg mb-4">
+              <div className='block col-span-full text-sand text-2xl'>Profile Information</div>
               <div className="sm:col-span-3">
                 <label htmlFor='firstName' className='block text-sm font-medium leading-6 text-sand mb-2'>First Name</label>
                 <Field name='firstName' type='text' placeholder="Firstname" className="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
@@ -63,8 +65,6 @@ export default function ApplicationForm (props: any) {
                 <Field name='lastName' type='text' placeholder="Lastname" className="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 <ErrorMessage name='lastName'>{msg => <div className='text-red-500 text-xs italic mt-1'>{msg}</div>}</ErrorMessage>
               </div>
-
-
 
               <div className='col-span-full'>
                 <label htmlFor='address' className='block text-sm font-medium leading-6 text-sand mb-2'>Address</label>
@@ -119,56 +119,62 @@ export default function ApplicationForm (props: any) {
                 <ErrorMessage name='partnerProfession'>{msg => <div className='text-red text-xs italic'>{msg}</div> }</ErrorMessage>
               </div> 
             </div>
+
             {/* Question forms  */}
-            <div>
+            <div className='flex flex-col gap-y-8 px-3 py-4 border-2 rounded-lg mb-4'>
+            <div className='block col-span-full text-sand text-2xl'>Questionaire</div> 
               {questions(QuestionArray)}
             </div>
-            <div>
-              <div>Prospective owner's preferences:</div>
+
+            {/* Preferences */}
+            <div className='flex flex-col gap-y-8 px-3 py-4 border-2 rounded-lg'>
+            <div className='block col-span-full text-sand text-2xl'>Prospective owner's preferences:</div>
 
               <div>
-                <label htmlFor='gender'>Gender preference</label>
-                <Field name='gender' as='select'>
+                <label htmlFor='gender' className='font-medium leading-6 text-sand mb-2 mr-2'>Gender preference</label>
+                <Field name='gender' as='select' className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6'>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                 </Field>
               </div>
 
-              <div className='mb-2'>
-                <span>Color Preference (select any that apply)</span>
+              <div className='mb-2 text-sand'>
+                <span className='font-medium leading-6'>Color Preference (select any that apply)</span>
+                <div role='group'>
                 <div>
                   <label className='inline-flex items-center'>
-                    <Field name='ruby' type='checkbox' className='form-checkbox'/>
+                    <Field name='ruby' type='checkbox' className='form-checkbox h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600'/>
                     <span className='ml-2'>Ruby</span>
                   </label> 
                 </div>
                 
                 <div>
                   <label className='inline-flex items-center'>
-                    <Field name='bnt' type='checkbox' className='form-checkbox'/>
+                    <Field name='bnt' type='checkbox' className='form-checkbox h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600'/>
                     <span className='ml-2'>Black & Tan</span>
                   </label> 
                 </div>
 
                 <div>
                   <label className='inline-flex items-center'>
-                    <Field name='tricolor' type='checkbox' className='form-checkbox'/>
+                    <Field name='tricolor' type='checkbox' className='form-checkbox h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600'/>
                     <span className='ml-2'>Tricolor</span>
                   </label> 
                 </div>
 
                 <div>
                   <label className='inline-flex items-center'>
-                    <Field name='blenheim' type='checkbox' className='form-checkbox'/>
+                    <Field name='blenheim' type='checkbox' className='form-checkbox h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600'/>
                     <span className='ml-2'>Blenheim</span>
                   </label> 
                 </div>
 
                 <div>
                   <label className='inline-flex items-center'>
-                    <Field name='any' type='checkbox' className='form-checkbox'/>
+                    <Field name='any' type='checkbox' className='form-checkbox h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600'/>
                     <span className='ml-2'>Any</span>
                   </label> 
+                </div>
                 </div>
 
               </div>
