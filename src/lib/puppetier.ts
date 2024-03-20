@@ -1,13 +1,7 @@
 'use server'
-import puppeteer, { launch } from 'puppeteer';
+import puppeteer from 'puppeteer';
 
 const runPuppetier = async (render: string) => {
-  
-  const componentType = typeof window === 'undefined' ? 'server' : 'client'
-  console.log(componentType)
-
-  console.log(puppeteer)
-  
   try {
 
     const browser = await puppeteer.launch({headless: true})

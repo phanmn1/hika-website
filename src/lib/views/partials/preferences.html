@@ -4,7 +4,7 @@
   <form class="form-labels">
     <div>
       <input name="male" type="radio" disabled="disabled" 
-        <% if( it.preferences.gender === "m") { %> 
+        <% if( it.preferences.gender === "male") { %> 
           <%= "checked='checked'" %> 
         <% } %>
       />
@@ -12,7 +12,7 @@
     </div>
     <div>
       <input name="female" type="radio" disabled="disabled" 
-        <% if( it.preferences.gender === "f") { %> 
+        <% if( it.preferences.gender === "female") { %> 
           <%= "checked='checked'" %> 
         <% } %>
       />
@@ -61,6 +61,16 @@
         <% } %>
       />
     <label for="blenheim">Blenheim</label>
+  </div>
+  <div>
+    <input name="any" type="checkbox" disabled="disabled" 
+      <% if( it.preferences.color.includes('any')) { %> 
+        <%= "checked='checked'" %> 
+      <% } else { %> 
+        <%= "" %>
+        <% } %>
+      />
+    <label for="any">Any</label>
   </div>
   <div>
 

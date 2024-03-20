@@ -89,9 +89,9 @@ export default function ApplicationForm (props: any) {
       validationSchema={ApplicationFormValidationSchema}
       onSubmit={async (values, { setSubmitting}) => {
         console.log(values)
-        //await props.testPost(values)
+        await props.testPost(values)
       }}>
-        <Form>
+        <Form className='self-center'>
           <div className="w-full max-w-5xl">
             {/* Profile Information */}
             <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 px-3 py-4 border-2 rounded-lg mb-4">
