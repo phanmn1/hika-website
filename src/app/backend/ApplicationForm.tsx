@@ -39,10 +39,6 @@ export interface IApplicationFormValues {
     question21: string,
     gender: string,
     preference: string[]
-
-
-
-
 }
 
 const initalValues: IApplicationFormValues = {
