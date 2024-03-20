@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import DogDetail from "@/components/DogDetail"
-import { dogs } from '../../data/dogArray'
+import { dogs } from '@/data/dogArray'
 import { DogInfo } from "@/types/DogInfo";
 import LineSeparator from "@/components/LineSeparator";
 
