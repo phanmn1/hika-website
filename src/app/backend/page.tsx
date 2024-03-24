@@ -1,4 +1,4 @@
-import { testPost } from "@/lib/server"
+import { puppyApplicationSubmit } from "@/server/application-submit"
 import ApplicationForm from "./ApplicationForm"
 import { oleo } from "@/global/fonts"
 import { Fragment } from "react"
@@ -19,7 +19,7 @@ export default function BackendTest () {
         />
         <div className={`py-5 text-3xl title-shadow text-sand ${oleo.className} self-center`}>Alohana Cavaliers Puppy Application Form</div>
         
-        <ApplicationForm className="basis-3/4" testPost={testPost}/>
+        <ApplicationForm className="basis-3/4" handleSubmit={puppyApplicationSubmit}/>
       </div>
     </Fragment>
   )
