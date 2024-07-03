@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { ResourceLinkItem } from "../types/Resource";
 
 export default function ResourceLinks (props: ResourceLinkItem) {
