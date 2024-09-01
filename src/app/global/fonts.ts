@@ -7,7 +7,7 @@ const oleo = Oleo_Script_Swash_Caps({
 })
 
 const pt_serif = PT_Serif({
-  weight: ['700'], 
+  weight: ['400', '700'], 
   subsets: ['latin']
 })
 

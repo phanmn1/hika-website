@@ -44,7 +44,7 @@ const toppers: AffiliateGrouping = {
     { 
       name: 'Orijen freeze-dried:',
       links: [
-        { url: 'https://amzn.to/4cFfLVQ'}
+        { url: 'https://www.costco.com/kirkland-signature-adult-formula-lamb%2C-rice-and-vegetable-dog-food-40-lb..product.100334974.html'}
       ], 
       displayType: "NONE"
     }, 
