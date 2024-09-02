@@ -6,8 +6,6 @@ export type AffiliateLink = {
   displayType: 'AND' | 'OR' | 'NONE'
 }
 
-
-
 export interface AffiliateGrouping { 
   groupName: string, 
   affiliateLinks: AffiliateLink[]

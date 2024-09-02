@@ -8,7 +8,7 @@ export default function AffiliateLinkNoGroup(props: {links: AffiliateLink[]}) {
       <div className="mx-5">
         { props.links.map((item, index) => {
             return (
-              <div className="my-6">
+              <div className="my-6" key={index}>
                 <div className={`${oleo.className} text-sand text-xl`}>{item.name}</div>
                 {displayLinks(item.displayType, item, index)}
               </div>
