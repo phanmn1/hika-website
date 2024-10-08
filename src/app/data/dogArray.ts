@@ -1,12 +1,14 @@
 import { PhotoAlbumProps } from "react-photo-album";
 import { DogInfo } from "../types/DogInfo"
 import { Photo } from "../types/Photo";
+import { link } from "fs";
 const breakpoints = [3840, 2400, 1080, 640, 384, 256, 128, 96, 64, 48];
 
 export const dogs: DogInfo[] = [
   {
     name: 'Magnificent Amaro Magnolia Passco',
     callName: 'Amaro',
+    linkRef: 'amaro',
     coat: 'Tricolor',
     sex: 'M',
     personality: 'Lower energy cuddle bug who would rather get attention than play with toys',
@@ -76,57 +78,10 @@ export const dogs: DogInfo[] = [
       }
     ]
   },
-  // {
-  //     name: 'Monkey D. Luffy',
-  //     callName: 'Luffy',
-  //     coat: 'Blenheim',
-  //     sex: 'M',
-  //     personality: 'The most balanced out of the lot and is right in the middle of energetic & chill!',
-  //     hobby: 'Getting attention & playing with everyone in the house.',
-  //     fact: 'He is a Poland boy and has a blenheim mark on his head.  He is the most excited wigglebutt out of the crew. His best friend here is Amaro.',
-  //     src: '/photos/IMG_7764.jpg',
-  //     photos: [
-  //       {
-  //         key: '1',
-  //         src: '/gallery/luffy/CCCED92E-05D1-4C1F-B711-7D0B884603CD.jpg',
-  //         width: 1125,
-  //         height: 1515
-  //       },
-  //       {
-  //         key: '2',
-  //         src: '/gallery/luffy/FB1A6F25-7771-4B9D-925B-0DEB84ADAE80.jpg',
-  //         height: 3780,
-  //         width: 3024
-  //       },
-  //       {
-  //         key: '3',
-  //         src: '/gallery/luffy/IMG_2078.jpg',
-  //         width: 3024,
-  //         height: 4032
-  //       },
-  //       {
-  //         key: '4',
-  //         src: '/gallery/luffy/IMG_2281.jpg',
-  //         width: 3024,
-  //         height: 4032
-  //       },
-  //       {
-  //         key: '5',
-  //         src: '/gallery/luffy/IMG_7966.jpg',
-  //         width: 1454,
-  //         height: 2068
-  //       }, 
-  //       {
-  //         key: '6',
-  //         src: '/gallery/luffy/IMG_8398.jpg',
-  //         width: 1124,
-  //         height: 1173
-  //       }
-  //     ]
-  // },
   {
-    name: 'Midori’s Flowers Mark',
+    name: 'CH Midori’s Flowers Mark',
     callName: 'Mark',
+    linkRef: 'mark',
     coat: 'Tricolor',
     sex: 'M',
     personality: 'Toy-lover with the most energy and the most fearless out of the crew',
@@ -181,12 +136,61 @@ export const dogs: DogInfo[] = [
         src: '/gallery/mark/mark_profile.png',
         width: 990,
         height: 1362
+      },
+      {
+        key: '9',
+        src: '/gallery/mark/IMG_0938.jpeg',
+        width: 1125,
+        height: 1474
+      },
+      {
+        key: '9',
+        src: '/gallery/mark/IMG_0937.jpeg',
+        width: 860,
+        height: 1281
+      },
+      {
+        key: '10',
+        src: '/gallery/mark/IMG_0936.jpeg',
+        width: 1051,
+        height: 1206
+      },
+      {
+        key: '11',
+        src: '/gallery/mark/IMG_0935.jpeg',
+        width: 967,
+        height: 1172
+      },
+      {
+        key: '12',
+        src: '/gallery/mark/IMG_0934.jpeg',
+        width: 809,
+        height: 1002
+      },
+      {
+        key: '13',
+        src: '/gallery/mark/IMG_0933.jpeg',
+        width: 1125,
+        height: 1268
+      },
+      {
+        key: '14',
+        src: '/gallery/mark/CHMark1.JPG',
+        width: 4095,
+        height: 2730
+      },
+      {
+        key: '15',
+        src: '/gallery/mark/CHMark3.JPG',
+        width: 4095,
+        height: 2730
       }
     ]
   },
   {
-    name: 'Lady Cinnamon',
+    name: 'Lady Cinnamon CGC',
     callName: 'Lady',
+    linkRef: 'lady',
     coat: 'Blenheim',
     sex: 'F',
     personality: 'The sweetest little angel who loves to hug people and give sweet peck-kisses',
@@ -301,12 +305,43 @@ export const dogs: DogInfo[] = [
         src: '/gallery/lady/IMG_9076.jpg',
         width: 2397,
         height: 4032
+      },
+      {
+        key: '19',
+        src: '/gallery/lady/IMG_0709.jpeg',
+        width: 1575,
+        height: 2100
+      },
+      {
+        key: '20',
+        src: '/gallery/lady/IMG_3370.jpeg',
+        width: 2632,
+        height: 3787
+      },
+      {
+        key: '21',
+        src: '/gallery/lady/IMG_4314.jpeg',
+        width: 1575,
+        height: 2100
+      },
+      {
+        key: '22',
+        src: '/gallery/lady/IMG_4735.jpeg',
+        width: 4268,
+        height: 6396
+      },
+      {
+        key: '23',
+        src: '/gallery/lady/IMG_4736.jpeg',
+        width: 4075,
+        height: 6112
       }
     ]
   },
   {
     name: 'Elizabeth Magnolia Passco',
     callName: 'Ellie',
+    linkRef: 'ellie',
     coat: 'Tricolor',
     sex: 'F',
     personality: 'Definition of being a couch potato but has spurts of energy just for a short bit!',
@@ -351,11 +386,92 @@ export const dogs: DogInfo[] = [
         height: 4032
       },
     ]
+  },
+  {
+    name: 'Vincent Van Goh Magnolia Passco (pending 2yr health testing)',
+    callName: 'Vincent',
+    linkRef: 'vincent',
+    sex: "M",
+    coat: 'Ruby',
+    personality: 'Sensitive baby but energetic; constantly moving like the energizer bunny.',
+    hobby: 'Loves to bother his older brothers and rub against their face just for fun.',
+    fact: 'He is my 3rd furbaby from Magnolia Passco.',
+    src: '/gallery/vincent/IMG_0713.jpeg',
+    photos: [
+      {
+        key: '1',
+        src: '/gallery/vincent/IMG_0265.jpeg',
+        width: 1575,
+        height: 2100
+      },
+      {
+        key: '2',
+        src: '/gallery/vincent/IMG_0440.jpeg',
+        width: 1280,
+        height: 1533
+      },
+      {
+        key: '3',
+        src: '/gallery/vincent/IMG_3443.jpeg',
+        width: 2048,
+        height: 1436
+      }
+    ]
+  },
+  {
+    name: 'Cherry Blossom ze Souhvezdi Lyry (pending 2yr health testing)',
+    callName: 'Cherry (pronounced like how Stevie Wonder sings “Cherie Amour”)',
+    linkRef: 'cherry',
+    sex: 'F',
+    coat: 'Black & Tan',
+    personality: 'The most friendly, cheerful, and most athletic out of my crew.',
+    hobby: 'Cuddling up to just about anyone and making everyone her best friend!',
+    fact: 'She is from Czechia & she holds the NEBL3 gene (N/mvdd) which is a huge hope to better the heart health of this precious breed by continuing research & monitoring for many upcoming years.',
+    src: '/gallery/cherry/IMG_0849.jpeg',
+    photos: [
+      {
+        key: '1',
+        src: '/gallery/cherry/IMG_7582.jpeg',
+        width: 658,
+        height: 640
+      },
+      {
+        key: '2',
+        src: '/gallery/cherry/IMG_8321.jpeg',
+        width: 1228,
+        height: 1792
+      },
+      {
+        key: '3',
+        src: '/gallery/cherry/IMG_0847.jpeg',
+        width: 1575,
+        height: 2100
+      },
+      {
+        key: '4',
+        src: '/gallery/cherry/IMG_0835.jpeg',
+        width: 1554,
+        height: 2051
+      },
+      {
+        key: '5',
+        src: '/gallery/cherry/IMG_0776.jpeg',
+        width: 1441,
+        height: 2099
+      },
+      {
+        key: '6',
+        src: '/gallery/cherry/IMG_0671.jpeg',
+        width: 1575,
+        height: 2100
+      },
+
+    ]
   }
 ]
 
-const photos = (callname: string) => {
-  const dogPhotos = dogs.find(dog => dog.callName.toLowerCase() === callname.toLowerCase())
+const photos = (linkRef: string) => {
+  const dogPhotos = dogs.find(dog => dog.linkRef.toLowerCase() === linkRef.toLowerCase())
 
   if (!dogPhotos)
     return []
@@ -382,7 +498,6 @@ const photos = (callname: string) => {
     }
   })
 
-  console.log(exportPhotos)
   return exportPhotos
 }
 
