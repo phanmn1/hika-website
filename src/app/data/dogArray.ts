@@ -75,6 +75,36 @@ export const dogs: DogInfo[] = [
         src: '/gallery/amaro/IMG_9166.jpg',
         height: 4032,
         width: 3024
+      },
+      {
+        key: '10',
+        src: '/gallery/amaro/IMG_9635.jpeg',
+        height: 2100,
+        width: 1575
+      },
+      {
+        key: '11',
+        src: '/gallery/amaro/IMG_7237.jpeg',
+        height: 1408,
+        width: 1280
+      },
+      {
+        key: '12',
+        src: '/gallery/amaro/IMG_0943.jpeg',
+        height: 2151,
+        width: 1537
+      },
+      {
+        key: '13',
+        src: '/gallery/amaro/IMG_0940.jpeg',
+        height: 1394,
+        width: 1125
+      },
+      {
+        key: '13',
+        src: '/gallery/amaro/IMG_0939.jpeg',
+        height: 1385,
+        width: 1098
       }
     ]
   },
@@ -385,6 +415,18 @@ export const dogs: DogInfo[] = [
         width: 2964,
         height: 4032
       },
+      {
+        key: '6',
+        src: '/gallery/ellie/IMG_0945.jpeg',
+        width: 1002,
+        height: 1398
+      },
+      {
+        key: '7',
+        src: '/gallery/ellie/IMG_0944.jpeg',
+        width: 852,
+        height: 1022
+      }
     ]
   },
   {
