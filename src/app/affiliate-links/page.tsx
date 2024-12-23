@@ -8,24 +8,17 @@ import AffiliateLinkNoGroup from "../components/AffiliateLinkNoGroup"
 import AffiliateLinkGroup from "../components/AffiliateLinkGroup"
 import MinusIcon from "../../../public/svg/minus-svgrepo-com.svg"
 import PlusIcon from "../../../public/svg/plus-svgrepo-com.svg"
+import AffiliateLinkCategory from "../components/AffiliateLinkCategory"
 /* Food Treats Data */
 const generalTreats: AffiliateLink[] = [
   {
-    name: 'Current Puppy food (feed till about 10/12 months',
+    name: 'Current Puppy food (feed till about 10/12 months)',
     links: [
       { url: 'https://amzn.to/45NulbF' }
     ],
     displayType: 'NONE'
-  },
-  {
-    name: 'Adult Food',
-    links: [
-      { url: 'https://amzn.to/45NulbF' },
-      { url: 'https://amzn.to/45NulbF' }
-    ],
-    displayType: "OR"
-  },
-  {
+  }
+  /*{
     name: 'Most cost-effective for volume + easy on digestion',
     links: [
       { url: 'https://www.costco.com/kirkland-signature-adult-formula-lamb%2C-rice-and-vegetable-dog-food-40-lb..product.100334974.html' }
@@ -35,11 +28,63 @@ const generalTreats: AffiliateLink[] = [
   {
     name: 'Other recommended company (Open Farm)',
     links: [
-      { url: 'https://a.co/d/0AYyMeo ' }
+      { url: 'https://a.co/d/0AYyMeo' }
     ],
     displayType: "NONE"
-  }
+  }*/
 ]
+
+const kibble: AffiliateGrouping = {
+  groupName: 'Kibble (Adult)',
+  affiliateLinks: [
+    {
+      name: 'Adult Food Kibble',
+      links: [
+        { url: 'https://amzn.to/4aaMZe4' },
+        { url: 'https://amzn.to/3wYJb1S' }
+      ],
+      displayType: "OR"
+    },
+  ]
+}
+
+const freezeDriedToppers: AffiliateGrouping = {
+  groupName: 'Freeze-dried Complete meal/topper',
+  affiliateLinks: [
+    {
+      name: "Steve’s real food(fav)",
+      links: [
+        {
+          url: 'https://a.co/d/hnpHlZp', note: 'lamb & emu'
+        }
+      ],
+      displayType: "NONE"
+    },
+    {
+      name: 'Smallbatchdog',
+      links: [
+        { url: 'https://a.co/d/8YnGPe9', note: 'beef' }
+      ],
+      displayType: 'NONE'
+    },
+    {
+      name: 'Simple Food Project',
+      links: [
+        { url: 'https://a.co/d/43NWd0Y', note: 'sample of 6 flavors to find your pup’s fav' }
+      ],
+      displayType: "NONE"
+    },
+    {
+      name: 'Vital Essentials',
+      links: [
+        { url: 'https://a.co/d/3j6BwdU', note: 'rabbit' },
+        { url: 'https://a.co/d/hI9Iz1o', note: 'duck' },
+        { url: 'https://a.co/d/0VU7Rfb', note: 'beef' }
+      ],
+      displayType: "AND"
+    }
+  ]
+}
 
 const toppers: AffiliateGrouping = {
   groupName: 'Toppers',
@@ -106,13 +151,13 @@ const treats: AffiliateGrouping = {
       ],
       displayType: "NONE"
     },
-    {
+    /*{
       name: 'Freeze-dried quail egg yolks',
       links: [
         { url: 'https://a.co/d/cTAoPss' }
       ],
       displayType: "NONE"
-    },
+    },*/
     {
       name: 'Blueberry cobbler',
       links: [
@@ -131,6 +176,20 @@ const treats: AffiliateGrouping = {
       name: "Goat milk",
       links: [
         { url: 'https://amzn.to/3yisxe3' }
+      ],
+      displayType: "NONE"
+    },
+    {
+      name: 'Sweet Potato Chews',
+      links: [
+        { url: 'https://a.co/d/jhuFzsd' }
+      ],
+      displayType: "NONE"
+    },
+    {
+      name: 'Duck Breast',
+      links: [
+        { url: 'https://a.co/d/ac2WIFR' }
       ],
       displayType: "NONE"
     }
@@ -254,9 +313,10 @@ const miscFoodItems: AffiliateGrouping = {
     {
       name: 'Water bowl for Cavaliers',
       links: [
+        { url: "https://a.co/d/b9FzAur" },
         { url: "https://amzn.to/3zkYseu" }
       ],
-      displayType: "NONE"
+      displayType: "AND"
     },
     {
       name: 'Dog food bowl',
@@ -767,6 +827,8 @@ function Icon({ openStatus }: { openStatus: boolean }) {
 
 }
 
+
+
 export default function Affiliates() {
   const [openFood, setOpenFood] = useState(false)
   const [openEnrichment, setOpenEnrichment] = useState(false)
@@ -777,8 +839,37 @@ export default function Affiliates() {
   const [openCleaning, setOpenCleaning] = useState(false)
   const [openOthers, setOpenOthers] = useState(false)
 
+
+  function foodNotes() {
+    return (
+      /*<div class="flex items-center p-4 mb-4 text-sm text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800" role="alert">
+  <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+  </svg>
+  <span class="sr-only">Info</span>*/
+      <div className="text-sand text-base m-5 p-10 border border-yellow-300 rounded-lg bg-yellow-50 bg-opacity-10">
+        <p>If in doubt, search dog foods here: <a href="https://dogfoodreviews.com/"
+          className="text-header hover:text-headerLight hover:font-bold break-words"
+          target="_blank">https://dogfoodreviews.com/</a></p>
+        <p>& some more info to help your research:</p>
+        <p><a href="https://www.thebalancedcanine.co.uk/articles/when-raw-food-isnt-an-option-usa"
+          className="text-header hover:text-headerLight hover:font-bold break-words"
+          target="_blank">https://www.thebalancedcanine.co.uk/articles/when-raw-food-isnt-an-option-usa
+        </a>
+        </p>
+        <p><a href="https://www.dogsnaturallymagazine.com/top-10-freeze-dried-dog-foods/"
+          className="text-header hover:text-headerLight hover:font-bold break-words"
+          target="_blank">https://www.dogsnaturallymagazine.com/top-10-freeze-dried-dog-foods/
+        </a>
+        </p>
+        <br />
+        <p><span>Important reminder: These are my recommended favorites, but it is essential to consider that feeding your dog the food they love and you are satisfied with, as evidenced by their energy and good gut health, can be equally great.
+        </span></p>
+      </div >)
+  }
   //console.log(openFood)
   //const handleOpen = <T,>(x: T) => x
+
 
 
   return (
@@ -789,6 +880,9 @@ export default function Affiliates() {
         <AccordionHeader onClick={() => setOpenFood(!openFood)}>FOOD/TREATS</AccordionHeader>
         <AccordionBody>
           <AffiliateLinkNoGroup links={generalTreats} />
+          <AffiliateLinkGroup links={kibble} />
+          <AffiliateLinkGroup links={freezeDriedToppers} />
+          {foodNotes()}
           <AffiliateLinkGroup links={toppers} />
           <AffiliateLinkGroup links={treats} />
           <AffiliateLinkGroup links={puppyChews} />

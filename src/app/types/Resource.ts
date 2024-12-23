@@ -1,9 +1,10 @@
 export type link = {
-  url: string
+  url: string,
+  note?: string
 }
 
 export interface ResourceLinkItem {
-  sectionTitle: string; 
+  sectionTitle: string;
   links: link[];
 }
 
@@ -12,11 +13,11 @@ export type ResourceLinkSection = {
 }
 
 export interface AffiliateLinks extends ResourceLinkItem {
-  displayType: "OR" | "AND" 
-} 
+  displayType: "OR" | "AND"
+}
 
-export interface AffiliateGrouping { 
-  
+export interface AffiliateGrouping {
+
 }
 
 
