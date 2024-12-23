@@ -10,33 +10,16 @@ import MinusIcon from "../../../public/svg/minus-svgrepo-com.svg"
 import PlusIcon from "../../../public/svg/plus-svgrepo-com.svg"
 import AffiliateLinkCategory from "../components/AffiliateLinkCategory"
 /* Food Treats Data */
-const generalTreats: AffiliateLink[] = [
-  {
-    name: 'Current Puppy food (feed till about 10/12 months)',
-    links: [
-      { url: 'https://amzn.to/45NulbF' }
-    ],
-    displayType: 'NONE'
-  }
-  /*{
-    name: 'Most cost-effective for volume + easy on digestion',
-    links: [
-      { url: 'https://www.costco.com/kirkland-signature-adult-formula-lamb%2C-rice-and-vegetable-dog-food-40-lb..product.100334974.html' }
-    ],
-    displayType: "NONE"
-  },
-  {
-    name: 'Other recommended company (Open Farm)',
-    links: [
-      { url: 'https://a.co/d/0AYyMeo' }
-    ],
-    displayType: "NONE"
-  }*/
-]
-
 const kibble: AffiliateGrouping = {
-  groupName: 'Kibble (Adult)',
+  groupName: 'Kibble',
   affiliateLinks: [
+    {
+      name: 'Current Puppy food (feed till about 10/12 months)',
+      links: [
+        { url: 'https://amzn.to/45NulbF' }
+      ],
+      displayType: 'NONE'
+    },
     {
       name: 'Adult Food Kibble',
       links: [
@@ -879,7 +862,6 @@ export default function Affiliates() {
       <Accordion open={openFood} icon={<Icon openStatus={openFood} />}>
         <AccordionHeader onClick={() => setOpenFood(!openFood)}>FOOD/TREATS</AccordionHeader>
         <AccordionBody>
-          <AffiliateLinkNoGroup links={generalTreats} />
           <AffiliateLinkGroup links={kibble} />
           <AffiliateLinkGroup links={freezeDriedToppers} />
           {foodNotes()}

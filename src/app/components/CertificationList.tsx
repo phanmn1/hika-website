@@ -6,9 +6,10 @@ import ENS_ESI from "../../../public/ens_esi.png"
 import OFA from "../../../public/ofa.png"
 import BreedersBootcamp from "../../../public/breeders_bootcamp.png"
 import CKCS from "../../../public/ckcs.png"
-import CKCS_Heart from "../../../public/ckcs_heart.jpg"
+import CKCS_Heart from "../../../public/ckcs_heart_updated.jpeg"
 import GOOD_DOG from '../../../public/alohana-cavaliers-hawaii-badge.png'
 import RED_CROSS from '../../../public/red_cross.jpg'
+
 
 
 const imageStyle: CSSProperties = {
@@ -18,7 +19,7 @@ const imageStyle: CSSProperties = {
 }
 
 const ensStyle: CSSProperties = {
-  marginLeft: 'auto', 
+  marginLeft: 'auto',
   marginRight: 'auto',
   borderRadius: '50%',
   marginBottom: '1rem'
@@ -31,7 +32,7 @@ const certifications: CertItem[] = [
     imageStyle: ensStyle,
     text: "Early Neurological Stimulation (ENS) and Early Scent Introduction (ESI) are daily exercises to which puppies are exposed to from days 3-16 to get them a headstart in development, resilience, and coping mechanisms. Benefits include: boosted brain development, improved cardiovascular performance, and stronger immune system (greater resistance to disease) to list a few.",
     link: "https://www.akc.org/expert-advice/dog-breeding/breeder-puppy-socialization-early-neurological-stimulation/"
-  }, 
+  },
   // OFA
   {
     imageSrc: OFA,
@@ -49,7 +50,7 @@ const certifications: CertItem[] = [
   // Puppy Culture
   {
     imageSrc: PuppyCulture,
-    imageStyle: imageStyle, 
+    imageStyle: imageStyle,
     text: "Puppy Culture is a socialization & training program specifically developed for puppies, from birth through the end of their critical socialization period which is 12 weeks old.",
     link: "https://www.shoppuppyculture.com/#a_aid=6568fcc05652b&amp;a_bid=d38a8f14"
   },
@@ -59,7 +60,7 @@ const certifications: CertItem[] = [
     imageStyle: imageStyle,
     text: "Our Cavaliers are registered in AKC and CKCSC-USA which are the two only legitimate registries in the U.S. for cavaliers. The CKCSC-USA has a code of ethics which each member must follow.",
     link: "https://ckcsc.org/code-ethics"
-  }, 
+  },
   // Red Cross
   {
     imageSrc: RED_CROSS,
@@ -80,7 +81,7 @@ const certifications: CertItem[] = [
         <li>TRADITION: Upholding AKC’s tradition of breeding happy & healthy purebred dogs.</li>
     </ul>`,
     link: "https://ckcsc.org/code-ethics"
-  }, 
+  },
   // Breeders Bootcamp
   {
     imageSrc: BreedersBootcamp,
@@ -90,10 +91,10 @@ const certifications: CertItem[] = [
   }
 ]
 
-export default function CertificationList () {
+export default function CertificationList() {
   return (
     certifications.map((cert: CertItem, index) => {
-      return <CertificationItem key={index} {...cert}/>
+      return <CertificationItem key={index} {...cert} />
     })
   )
 }

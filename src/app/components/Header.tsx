@@ -35,8 +35,8 @@ const navlinks: NavItem[] = [
     link: '/resources'
   },
   {
-    name: 'Affiliate Links',
-    link: '/affiliate-links'
+    name: 'Products',
+    link: '/products'
   },
   {
     name: 'contact',

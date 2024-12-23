@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <div className="flex justify-center my-5 gap-4">
         <Image
-          src="/photos/IMG_0990.jpg"
+          src="/photos/IMG_1320.jpeg"
           height={200}
           width={500}
           alt="test image"
