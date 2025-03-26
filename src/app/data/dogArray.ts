@@ -429,37 +429,37 @@ export const dogs: DogInfo[] = [
       }
     ]
   },
-  {
-    name: 'Vincent Van Goh Magnolia Passco (pending 2yr health testing)',
-    callName: 'Vincent',
-    linkRef: 'vincent',
-    sex: "M",
-    coat: 'Ruby',
-    personality: 'Sensitive baby but energetic; constantly moving like the energizer bunny.',
-    hobby: 'Loves to bother his older brothers and rub against their face just for fun.',
-    fact: 'He is my 3rd furbaby from Magnolia Passco.',
-    src: '/gallery/vincent/IMG_0713.jpeg',
-    photos: [
-      {
-        key: '1',
-        src: '/gallery/vincent/IMG_0265.jpeg',
-        width: 1575,
-        height: 2100
-      },
-      {
-        key: '2',
-        src: '/gallery/vincent/IMG_0440.jpeg',
-        width: 1280,
-        height: 1533
-      },
-      {
-        key: '3',
-        src: '/gallery/vincent/IMG_3443.jpeg',
-        width: 2048,
-        height: 1436
-      }
-    ]
-  },
+  /* {
+     name: 'Vincent Van Goh Magnolia Passco (pending 2yr health testing)',
+     callName: 'Vincent',
+     linkRef: 'vincent',
+     sex: "M",
+     coat: 'Ruby',
+     personality: 'Sensitive baby but energetic; constantly moving like the energizer bunny.',
+     hobby: 'Loves to bother his older brothers and rub against their face just for fun.',
+     fact: 'He is my 3rd furbaby from Magnolia Passco.',
+     src: '/gallery/vincent/IMG_0713.jpeg',
+     photos: [
+       {
+         key: '1',
+         src: '/gallery/vincent/IMG_0265.jpeg',
+         width: 1575,
+         height: 2100
+       },
+       {
+         key: '2',
+         src: '/gallery/vincent/IMG_0440.jpeg',
+         width: 1280,
+         height: 1533
+       },
+       {
+         key: '3',
+         src: '/gallery/vincent/IMG_3443.jpeg',
+         width: 2048,
+         height: 1436
+       }
+     ]
+   },*/
   {
     name: 'Cherry Blossom ze Souhvezdi Lyry (pending 2yr health testing)',
     callName: 'Cherry (pronounced like how Stevie Wonder sings “Cherie Amour”)',
